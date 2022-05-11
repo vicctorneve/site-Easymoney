@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   
+   text-decoration: none;
+}
+/*HEADER*/
+body{
+   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
+   
+}
+header{
+   background: linear-gradient(to bottom, rgb(153, 4, 4), rgb(185, 6, 6));
+   color: white;
+   padding: 10px;
+}
+
+main{
+   color: white;
+}
+main div.container-h1{
+   display: block;
+   width: 200px;
+   margin: 40px auto;
+   font-size: 1.3em;
+   text-align: center;
+   color: white;
+}
+main div.container-h1 h1{
+   color: white;
+   text-transform: uppercase;
+}
+main .container-planos{
+   max-width: 900px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 50px auto;
+}
+main .container-planos .card_pln{
+   position: relative;
+   width: 300px;
+   height: 200px;
+   padding: 20px;
+   margin: 20px;
+   background-color: rgba(0, 0, 0, 0.63);
+  /* background-color: orange;*/
+   text-transform: uppercase;
+   color: white;
+}
+main .container-planos .card_pln h2{
+   color: red;
+   
+}
+main .container-planos .card_pln .content{
+   /*background-color: blue;*/
+   position: absolute;
+   
+}
+main .container-planos .card_pln .text{
+   margin: 20px 0px;
+   width: 100px;
+   display: flex;
+   align-items: center;
+}
+main .container-planos .card_pln .text p.valor{
+   font-size: 2em;
+   font-weight: normal;
+   
+}
+main .container-planos .card_pln .text p{
+   margin-right: 5px;
+   font-weight: bold;
+}
+section.container-grp-free{
+   
+   background-color: rgba(0, 0, 0, 0.774);
+   padding: 20px;
+   height: 200px;
+}
+section.container-grp-free h2{
+   text-align: center;
+   margin: 10px;
+}
+section.container-grp-free p{
+   padding: 10px;
+}
+section.container-grp-free a{
+   text-decoration: none;
+   color: white;
+}
+aside{
+   color: white;
+   background-color: black;
+}
+footer{
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+footer a{
+   color: white;
+   text-decoration: underline;
+}
+/*ANIMAÇÃO*/
+
+.grow{
+   
+   transition: all 200ms ease;
+}
+.grow:hover{
+   -webkit-transform: scale(1.1);
+}
