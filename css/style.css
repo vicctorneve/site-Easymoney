@@ -1,117 +1,67 @@
 @charset "utf-8";
 
 *{
-   margin: 0px;
    padding: 0px;
+   margin: 0px;
    box-sizing: border-box;
-   
    text-decoration: none;
+   color: white;
 }
-/*HEADER*/
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
-   
+   color: white;
 }
 header{
-   background: linear-gradient(to bottom, rgb(153, 4, 4), rgb(185, 6, 6));
+   background: linear-gradient(to top, rgb(153, 4, 4), rgb(185, 6, 6));
    color: white;
-   padding: 10px;
+   padding: 10px 20px;
+   box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
-
-main{
-   color: white;
-}
-main div.container-h1{
-   display: block;
-   width: 200px;
-   margin: 40px auto;
-   font-size: 1.3em;
+.container1{
    text-align: center;
-   color: white;
+   font-size: 1.5em;
+   margin: 30px;
 }
-main div.container-h1 h1{
-   color: white;
-   text-transform: uppercase;
-}
-main .container-planos{
-   max-width: 900px;
+.container-planos{
    display: flex;
    flex-wrap: wrap;
+   max-width: 1000px;
+   margin: auto;
    justify-content: center;
-   margin: 50px auto;
-}
-main .container-planos .card_pln{
-   position: relative;
-   width: 300px;
-   height: 200px;
+   color: white;
    padding: 20px;
-   margin: 20px;
-   background-color: rgba(0, 0, 0, 0.63);
-  /* background-color: orange;*/
-   text-transform: uppercase;
+}
+.container-planos a{
    color: white;
 }
-main .container-planos .card_pln h2{
+.container-planos .card_pln{
+   background-color: rgba(0, 0, 0, 0.849);
+   padding: 20px;
+   font-size: 1.3em;
+   width: 350px;
+   height: 320px;
+   margin: 20px;
+   text-transform: uppercase;
+   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.719);
+}
+.container-planos .card_pln h2{
    color: red;
-   
 }
-main .container-planos .card_pln .content{
-   /*background-color: blue;*/
-   position: absolute;
+.container-planos .card_pln .content{
    
-}
-main .container-planos .card_pln .text{
-   margin: 20px 0px;
-   width: 100px;
    display: flex;
+   font-size: 1.5em;
    align-items: center;
+   height: 200px;
 }
-main .container-planos .card_pln .text p.valor{
-   font-size: 2em;
-   font-weight: normal;
+.container-planos .card_pln .content p.valor{
+   margin-right: 10px;
 }
-main .container-planos .card_pln .text p.valor::before{
+.container-planos .card_pln .content p.valor:before{
    content: 'R$';
 }
-main .container-planos .card_pln .text p{
-   margin-right: 5px;
-   font-weight: bold;
-}
-section.container-grp-free{
-   
-   background-color: rgba(0, 0, 0, 0.774);
-   padding: 20px;
-   height: 200px;
-}
-section.container-grp-free h2{
-   text-align: center;
-   margin: 10px;
-}
-section.container-grp-free p{
-   padding: 10px;
-}
-section.container-grp-free a{
-   text-decoration: none;
-   color: white;
-}
-aside{
-   color: white;
-   background-color: black;
-}
-footer{
-   color: white;
-   text-align: center;
-   padding: 5px;
-}
-footer a{
-   color: white;
-   text-decoration: underline;
-}
-/*ANIMAÇÃO*/
-
 .grow{
-   
-   transition: all 200ms ease;
+   transition: all 200ms ease-in-out;
 }
 .grow:hover{
    -webkit-transform: scale(1.1);
