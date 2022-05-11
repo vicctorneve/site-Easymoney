@@ -5,7 +5,7 @@
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
-   color: white;
+   
 }
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
@@ -17,7 +17,13 @@ header{
    padding: 10px 20px;
    box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
-.container1{
+.container-sobre{
+   color: black;
+   padding: 20px;
+   background-color: white;
+   height: 300px;
+}
+.container-planos-title{
    text-align: center;
    font-size: 1.5em;
    margin: 30px;
@@ -38,7 +44,7 @@ header{
    background-color: rgba(0, 0, 0, 0.849);
    padding: 20px;
    font-size: 1.3em;
-   width: 350px;
+   width: 400px;
    height: 320px;
    margin: 20px;
    text-transform: uppercase;
@@ -60,9 +66,43 @@ header{
 .container-planos .card_pln .content p.valor:before{
    content: 'R$';
 }
+
+.container-grp-free{
+   background-color: black;
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+.container-grp-free h1{
+   font-size: 2em;
+   margin: 20px 0px;
+}
+.container-grp-free a{
+   color: white;
+}
+.container-grp-free p{
+   margin: 5px;
+}
+.container-grp-free p:hover{
+   text-decoration: underline;
+}
+footer{
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+footer a{
+   color: white;
+   text-decoration: underline;
+}
 .grow{
    transition: all 200ms ease-in-out;
 }
 .grow:hover{
    -webkit-transform: scale(1.1);
+}
+@media (max-width:935px){
+   .container-planos .card_pln{
+      width: 350px;
+   }
 }
