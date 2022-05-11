@@ -56,12 +56,13 @@ header{
 .container-planos .card_pln .content{
    
    display: flex;
-   font-size: 1.5em;
+   
    align-items: center;
    height: 200px;
 }
 .container-planos .card_pln .content p.valor{
    margin-right: 10px;
+   font-size: 1.5em;
 }
 .container-planos .card_pln .content p.valor:before{
    content: 'R$';
