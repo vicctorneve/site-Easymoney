@@ -69,7 +69,9 @@ main .container-planos .card_pln .text{
 main .container-planos .card_pln .text p.valor{
    font-size: 2em;
    font-weight: normal;
-   
+}
+main .container-planos .card_pln .text p.valor::before{
+   content: 'R$';
 }
 main .container-planos .card_pln .text p{
    margin-right: 5px;
