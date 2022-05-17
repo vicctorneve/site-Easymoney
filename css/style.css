@@ -55,6 +55,7 @@ header{
 .container-planos .card_pln h2{
    color: red;
    font-size: 2em;
+   
 }
 .container-planos .card_pln .content{
    width: 200px;
