@@ -14,16 +14,36 @@ body{
 header{
    background: linear-gradient(to top, rgb(153, 4, 4), rgb(185, 6, 6));
    color: white;
-   padding: 10px 20px;
+   text-align: center;
+   padding: 10px 0px;
    box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
 .container-sobre{
    color: black;
-   padding: 20px;
+   padding: 30px;
    background-color: white;
-   height: 300px;
+   height: auto;
 }
-
+.container-sobre .container-principal{
+   background-color: aqua;
+   padding: 20px;
+   width: 1000px;
+   margin: auto;
+}
+.container-sobre h1{
+   color: black;
+}
+.container-sobre div.video{
+   
+   background-color: black;
+   width: 700px;
+   margin: auto;
+   height: 400px;
+}
+.container-sobre .container-principal p{
+   text-align: center;
+   margin: 20px;
+}
 .container-planos{
    display: flex;
    flex-wrap: wrap;
@@ -33,42 +53,57 @@ header{
    color: white;
    padding: 20px;
 }
-.container-planos a{
-   color: white;
-}
 .container-planos-title{
    text-align: center;
-   font-size: 1.5em;
-   margin: 30px;
+   margin: 40px;
+}
+.container-planos{
+   max-width: 1000px;
+   display: flex;
+   gap: 30px;
 }
 .container-planos .card_pln{
-   background-color: rgba(0, 0, 0, 0.849);
-   padding: 20px;
-   
-   width: 330px;
-   height: 300px;
-   margin: 20px;
-   text-transform: uppercase;
-   
-   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.719);
+   position: relative;
+   width: 350px;
+   height: 250px;
+   background-color: rgba(0, 0, 0, 0.479);
+   padding: 10px;
 }
 .container-planos .card_pln h2{
    color: red;
    font-size: 2em;
-   
+   margin: 10px 0px;
 }
 .container-planos .card_pln .content{
-   width: 200px;
-   display: flex;
+   
    font-size: 1.5em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 150px;
+}
+.container-planos .card_pln .content .content-valor{
+   display: flex;
+   gap: 10px;
    align-items: center;
-   height: 200px;
 }
-.container-planos .card_pln .content p.valor{
-   margin-right: 10px;
+.container-planos .card_pln .content .content-valor p.valor{
+   font-size: 1.5em;
 }
-.container-planos .card_pln .content p.valor:before{
-   content: 'R$';
+.container-planos .card_pln .content button{
+   background-color: aqua;
+   border: none;
+   padding: 10px;
+   width: 300px;
+   margin: 20px auto;
+}
+.container-planos .card_pln .content button a{
+   color: black;
+   padding: 10px;
+}
+.container-planos .card_pln .content p.desc{
+   font-size: 20px;
+   
 }
 .container-grp-free{
    background-color: black;
@@ -88,6 +123,16 @@ header{
 }
 .container-grp-free p:hover{
    text-decoration: underline;
+}
+.container-depoimentos{
+   background-color: gray;
+   height: 500px;
+}
+.container-depoimentos h1{
+   text-align: center;
+   color: aqua;
+   padding: 20px;
+   font-weight: bold;
 }
 footer{
    background-color: red;
