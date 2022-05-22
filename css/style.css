@@ -7,6 +7,16 @@
    text-decoration: none;
    
 }
+@keyframes animation{
+   0%{
+      -webkit-transform: scale(1);
+   }
+   
+   100%{
+      -webkit-transform: scale(1.5);
+
+   }
+}
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
@@ -17,6 +27,9 @@ header{
    text-align: center;
    padding: 10px 0px;
    box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
+}
+header h1{
+   
 }
 .container-sobre{
    color: black;
@@ -32,17 +45,17 @@ header{
 }
 .container-sobre h1{
    color: black;
+   
 }
 .container-sobre div.video{
-   
    background-color: black;
    width: 700px;
    margin: auto;
    height: 400px;
+   margin-bottom: 20px;
 }
 .container-sobre .container-principal p{
    text-align: center;
-   margin: 20px;
 }
 .container-planos{
    display: flex;
