@@ -21,7 +21,7 @@ header{
 
 .container-sobre{
    color: black;
-   padding: 30px;
+   padding: 20px;
    background-color: white;
    height: auto;
 }
@@ -32,16 +32,14 @@ header{
 }
 .container-sobre h1{
    color: black;
+   text-align: center;
+   margin: 20px;
 }
 .container-sobre div.video{
    background-color: black;
    width: 700px;
    margin: auto;
    height: 400px;
-   margin-bottom: 20px;
-}
-.container-sobre .container-principal p{
-   text-align: center;
 }
 .container-planos{
    display: flex;
@@ -123,14 +121,28 @@ header{
 }
 .container-depoimentos{
    background-color: gray;
-   height: 500px;
+   height: auto;
+   
 }
 .container-depoimentos h1{
    text-align: center;
-   color: aqua;
+   color: white;
    padding: 20px;
    font-weight: bold;
 }
+.container-depoimentos .depoimentos-flex{
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+}
+.container-depoimentos .depoimentos-flex article.depoimento{
+   width: 300px;
+   height: 400px;
+   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
+   margin: 10px;
+   background-color: white;
+   
+}  
 footer{
    background-color: red;
    color: white;
