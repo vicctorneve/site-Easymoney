@@ -7,16 +7,6 @@
    text-decoration: none;
    
 }
-@keyframes animation{
-   0%{
-      -webkit-transform: scale(1);
-   }
-   
-   100%{
-      -webkit-transform: scale(1.5);
-
-   }
-}
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
@@ -28,9 +18,7 @@ header{
    padding: 10px 0px;
    box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
-header h1{
-   
-}
+
 .container-sobre{
    color: black;
    padding: 30px;
@@ -38,14 +26,12 @@ header h1{
    height: auto;
 }
 .container-sobre .container-principal{
-   
    padding: 20px;
    width: 1000px;
    margin: auto;
 }
 .container-sobre h1{
    color: black;
-   
 }
 .container-sobre div.video{
    background-color: black;
@@ -88,7 +74,6 @@ header h1{
    margin: 10px 0px;
 }
 .container-planos .card_pln .content{
-   
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
@@ -116,7 +101,6 @@ header h1{
 }
 .container-planos .card_pln .content p.desc{
    font-size: 20px;
-   
 }
 .container-grp-free{
    background-color: black;
