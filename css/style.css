@@ -5,20 +5,38 @@
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
-   
+   list-style: none;
 }
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
 }
 header{
+   position: relative;
    background: linear-gradient(to top, rgb(153, 4, 4), rgb(185, 6, 6));
    color: white;
    text-align: center;
    padding: 10px 0px;
    box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
-
+nav{
+   width: 100vw;
+   top: 0;
+   padding: 10px 0px;
+   background-color: rgb(153, 4, 4);
+}
+nav li{
+   display: inline;
+   cursor: pointer;
+   padding: 10px;
+   transition: all 200ms ease;
+}
+nav li:hover{
+   background-color: rgba(185, 6, 6, 0.5);
+}
+nav a{
+   color: white;
+}
 .container-sobre{
    color: black;
    padding: 20px;
@@ -27,7 +45,7 @@ header{
 }
 .container-sobre .container-principal{
    padding: 20px;
-   width: 1000px;
+   width: 90VW;
    margin: auto;
 }
 .container-sobre h1{
@@ -49,15 +67,12 @@ header{
    justify-content: center;
    color: white;
    padding: 20px;
+   gap: 30px;
 }
 .container-planos-title{
+   
    text-align: center;
    margin: 40px;
-}
-.container-planos{
-   max-width: 1000px;
-   display: flex;
-   gap: 30px;
 }
 .container-planos .card_pln{
    position: relative;
@@ -144,12 +159,12 @@ header{
    
 }  
 footer{
-   background-color: red;
-   color: white;
+   background-color: white;
+   color: black;
    text-align: center;
 }
 footer a{
-   color: white;
+   color: black;
    text-decoration: underline;
 }
 .grow{
@@ -161,5 +176,17 @@ footer a{
 @media (max-width:935px){
    .container-planos .card_pln{
       width: 350px;
+   }
+}
+@media (max-width:800px){
+   .container-sobre div.video{
+      width: 500px;
+      height: 300px;
+   }
+}
+@media (max-width:600px){
+   .container-sobre div.video{
+      width: 300px;
+      height: 200px;
    }
 }
