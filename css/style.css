@@ -13,78 +13,104 @@ body{
 }
 header{
    position: relative;
-   background: linear-gradient(to top, rgb(153, 4, 4), rgb(185, 6, 6));
+   background-color: black;
    color: white;
    text-align: center;
    padding: 10px 0px;
-   box-shadow: 2px 2px 1px rgba(185, 6, 6, 0.219)
 }
-nav{
-   width: 100vw;
-   top: 0;
-   padding: 10px 0px;
-   background-color: rgb(153, 4, 4);
-}
-nav li{
-   display: inline;
-   cursor: pointer;
-   padding: 10px;
-   transition: all 200ms ease;
-}
-nav li:hover{
-   background-color: rgba(185, 6, 6, 0.5);
-}
-nav a{
-   color: white;
+header p{
+   text-transform: uppercase;
+   font-size: 1.5em;
 }
 .container-sobre{
+   flex-direction: column;
+   display: flex;
    color: black;
    padding: 20px;
-   background-color: white;
+   background: linear-gradient(to bottom, rgb(136, 135, 135), rgb(80, 79, 79));
    height: auto;
+   background-image: url(../assets/image/bg.webp);
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: center center;
 }
 .container-sobre .container-principal{
    padding: 20px;
    width: 90VW;
    margin: auto;
 }
-.container-sobre h1{
-   color: black;
+.container-sobre .title{
+   width: 1000px;
+   margin: 30px auto;
+}
+.container-sobre p{
+   color: white;
    text-align: center;
+   font-size: 2.5em;
    margin: 20px;
+}
+.container-sobre p span.p-red{
+   color: red;
 }
 .container-sobre div.video{
    background-color: black;
-   width: 700px;
+   width: 1000px;
    margin: auto;
-   height: 400px;
+   height: 500px;
+   border-radius: 15px;
+   box-shadow: -2px -2px 6px 4px rgba(255, 0, 0, 0.616);
+}
+.container-sobre a{
+   margin: auto;
+}
+.container-sobre button{
+   text-transform: uppercase;
+   margin: 40px;
+   width: 350px;
+   box-shadow: 0px -2px 15px 14px #ff00004f;
+   cursor: pointer;
+   border: none;
+   align-self: center;
+   padding: 20px;
+   background-color: red;
+   font-size: 1.5em;
+   color: white;
+   border-radius: 10px;
+   transition: all 300ms ease;
+}
+.container-sobre button:hover{
+   -webkit-transform: scale(0.9);
 }
 .container-planos{
    display: flex;
-   flex-wrap: wrap;
+ 
+   flex-direction: row;
    max-width: 1000px;
    margin: auto;
    justify-content: center;
+   align-items: center;
    color: white;
    padding: 20px;
    gap: 30px;
 }
 .container-planos-title{
-   
    text-align: center;
    margin: 40px;
 }
 .container-planos .card_pln{
    position: relative;
    width: 350px;
-   height: 250px;
+   height: 500px;
    background-color: rgba(0, 0, 0, 0.479);
    padding: 10px;
 }
 .container-planos .card_pln h2{
    color: red;
    font-size: 2em;
-   margin: 10px 0px;
+   margin: 20px 0px;
+   text-align: center;
+   border-radius: 20px;
 }
 .container-planos .card_pln .content{
    font-size: 1.5em;
@@ -101,14 +127,15 @@ nav a{
 .container-planos .card_pln .content .content-valor p.valor{
    font-size: 1.5em;
 }
-.container-planos .card_pln .content button{
+.container-planos .card_pln button{
+   border-radius: 10px;
    background-color: aqua;
    border: none;
    padding: 10px;
    width: 300px;
    margin: 20px auto;
 }
-.container-planos .card_pln .content button a{
+.container-planos .card_pln button a{
    color: black;
    padding: 10px;
 }
@@ -166,12 +193,6 @@ footer{
 footer a{
    color: black;
    text-decoration: underline;
-}
-.grow{
-   transition: all 200ms ease-in-out;
-}
-.grow:hover{
-   -webkit-transform: scale(1.1);
 }
 @media (max-width:935px){
    .container-planos .card_pln{
