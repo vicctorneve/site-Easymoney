@@ -164,7 +164,6 @@ header p{
 .container-depoimentos{
    background-color: gray;
    height: auto;
-   
 }
 .container-depoimentos h1{
    text-align: center;
@@ -178,13 +177,34 @@ header p{
    padding: 20px;
 }
 .container-depoimentos .depoimentos-flex article.depoimento{
-   width: 300px;
+   width: 250px;
    height: 400px;
    box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
    margin: 10px;
-   background-color: white;
-   
+   background-color: black;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center;
 }  
+#feedback1{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
+}
+#feedback2{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
+}
+#feedback3{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);
+   
+}
+#feedback4{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
+}
+#feedback5{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-5.jpeg);
+}
+#feedback6{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
+}
 footer{
    background-color: white;
    color: black;
