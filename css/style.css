@@ -89,13 +89,14 @@ header p{
    padding: 20px;
    font-weight: bold;
 }
-.container-depoimentos .depoimentos-flex{
-   display: flex;
-   flex-wrap: wrap;
+.container-depoimentos .depoimentos-grid{
+   display: grid;
    justify-content: center;
    padding: 20px;
+   grid-template-columns: repeat(auto-fill, 300px);
+   
 }
-.container-depoimentos .depoimentos-flex article.depoimento{
+.container-depoimentos .depoimentos-grid article.depoimento{
    width: 250px;
    height: 400px;
    margin: 20px;
@@ -124,7 +125,15 @@ header p{
 #feedback6{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
 }
-
+#feedback7{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-7.jpeg);
+}
+#feedback8{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-8.jpeg);
+}
+#feedback9{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
+}
 .container-planos{
    display: flex;
    flex-wrap: wrap;
