@@ -41,7 +41,7 @@ header p{
    margin: auto;
 }
 .container-sobre .title{
-   width: 1000px;
+
    margin: 30px auto;
 }
 .container-sobre p{
@@ -79,14 +79,55 @@ header p{
    border-radius: 10px;
    transition: all 300ms ease;
 }
-.container-sobre button:hover{
-   -webkit-transform: scale(0.9);
+.container-depoimentos{
+   background-color: gray;
+   height: auto;
 }
+.container-depoimentos h1{
+   text-align: center;
+   color: white;
+   padding: 20px;
+   font-weight: bold;
+}
+.container-depoimentos .depoimentos-flex{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+}
+.container-depoimentos .depoimentos-flex article.depoimento{
+   width: 250px;
+   height: 400px;
+   margin: 20px;
+   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
+   background-color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}  
+#feedback1{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
+}
+#feedback2{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
+}
+#feedback3{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);
+   
+}
+#feedback4{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
+}
+#feedback5{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-5.jpeg);
+}
+#feedback6{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
+}
+
 .container-planos{
    display: flex;
- 
-   flex-direction: row;
-   max-width: 1000px;
+   flex-wrap: wrap;
    margin: auto;
    justify-content: center;
    align-items: center;
@@ -99,45 +140,60 @@ header p{
    margin: 40px;
 }
 .container-planos .card_pln{
+   display: flex;
+   flex-direction: column;
    position: relative;
    width: 350px;
    height: 500px;
    background-color: rgba(0, 0, 0, 0.479);
    padding: 10px;
+   border-radius: 20px;
 }
-.container-planos .card_pln h2{
+.container-planos .card_pln .card-title{
+   margin: 20px;
+}
+.container-planos .card_pln .card-title h2{
    color: red;
    font-size: 2em;
-   margin: 20px 0px;
    text-align: center;
    border-radius: 20px;
+}
+.container-planos .card_pln .card-title p{
+   text-align: center;
+   color: gray;
 }
 .container-planos .card_pln .content{
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   height: 150px;
+
+   height: 300px;
+
+   align-items: center;
 }
 .container-planos .card_pln .content .content-valor{
    display: flex;
    gap: 10px;
    align-items: center;
+   height: 100px;
+   width: 250px;
 }
 .container-planos .card_pln .content .content-valor p.valor{
    font-size: 1.5em;
+}
+.container-planos .card_pln a{
+   text-align: center;
 }
 .container-planos .card_pln button{
    border-radius: 10px;
    background-color: aqua;
    border: none;
    padding: 10px;
-   width: 300px;
+   width: 250px;
    margin: 20px auto;
-}
-.container-planos .card_pln button a{
-   color: black;
-   padding: 10px;
+   transition: all 300ms ease;
+   cursor: pointer;
+   box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.274);
 }
 .container-planos .card_pln .content p.desc{
    font-size: 20px;
@@ -161,50 +217,7 @@ header p{
 .container-grp-free p:hover{
    text-decoration: underline;
 }
-.container-depoimentos{
-   background-color: gray;
-   height: auto;
-}
-.container-depoimentos h1{
-   text-align: center;
-   color: white;
-   padding: 20px;
-   font-weight: bold;
-}
-.container-depoimentos .depoimentos-flex{
-   display: flex;
-   justify-content: center;
-   padding: 20px;
-}
-.container-depoimentos .depoimentos-flex article.depoimento{
-   width: 250px;
-   height: 400px;
-   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
-   margin: 10px;
-   background-color: black;
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center center;
-}  
-#feedback1{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
-}
-#feedback2{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
-}
-#feedback3{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);
-   
-}
-#feedback4{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
-}
-#feedback5{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-5.jpeg);
-}
-#feedback6{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
-}
+
 footer{
    background-color: white;
    color: black;
@@ -214,20 +227,27 @@ footer a{
    color: black;
    text-decoration: underline;
 }
-@media (max-width:935px){
-   .container-planos .card_pln{
-      width: 350px;
+/* ANIMAÇÃO */
+
+.decrease:hover{
+   -webkit-transform: scale(0.9);
+}
+@media (max-width: 1529px){
+   .container-planos{
+      max-width: 800px;
    }
 }
-@media (max-width:800px){
+@media (max-width:1150px){
    .container-sobre div.video{
-      width: 500px;
-      height: 300px;
+      width: 800px;
    }
 }
-@media (max-width:600px){
+@media (max-width:950px){
+   .container-sobre p{
+      font-size: 1.5em;
+   }
    .container-sobre div.video{
-      width: 300px;
-      height: 200px;
+      width: 600px;
+      height: 400px;
    }
 }
