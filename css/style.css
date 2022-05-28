@@ -12,9 +12,10 @@ body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
 }
+/* HEADER */
 header{
    position: relative;
-   background-color: black;
+   background-color: rgb(184, 8, 8);
    color: white;
    text-align: center;
    padding: 10px 0px;
@@ -23,18 +24,15 @@ header p{
    text-transform: uppercase;
    font-size: 1.3em;
 }
+/* CONTAINER-SOBRE */
 .container-sobre{
    flex-direction: column;
    display: flex;
    color: black;
    padding: 20px;
-   background: linear-gradient(to bottom, rgb(136, 135, 135), rgb(80, 79, 79));
    height: auto;
-   background-image: url(../assets/image/bg.webp);
+   background: gray url(../assets/image/background-sobre.jpg) center center no-repeat fixed;
    background-size: cover;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-position: center center;
 }
 .container-sobre .container-principal{
    padding: 20px;
@@ -88,12 +86,12 @@ header p{
    font-weight: bold;
 }
 .container-depoimentos{
-   background-color: gray;
+   background-color: white;
    height: auto;
 }
 .container-depoimentos h1{
    text-align: center;
-   color: white;
+   color: black;
    padding: 40px;
    font-weight: bold;
    font-size: 2em;
@@ -106,7 +104,8 @@ header p{
    grid-template-columns: repeat(auto-fill, 300px);
    
 }
-.container-depoimentos .depoimentos-grid article.depoimento{
+.container-depoimentos .depoimentos-grid .depoimento{
+   list-style: none;
    width: 250px;
    height: 400px;
    margin: 20px;
@@ -116,6 +115,7 @@ header p{
    background-repeat: no-repeat;
    background-position: center center;
 }  
+/*imagens de feedback*/
 #feedback1{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
 }
@@ -144,6 +144,7 @@ header p{
 #feedback9{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
 }
+/* CONTAINER PLANOS */
 .container-planos{
    display: flex;
    flex-wrap: wrap;
@@ -167,6 +168,7 @@ header p{
    background-color: rgba(0, 0, 0, 0.479);
    padding: 10px;
    border-radius: 20px;
+   box-shadow:0px 0px 44px -41px red;
 }
 .container-planos .card_pln .card-title{
    margin: 20px;
@@ -186,7 +188,6 @@ header p{
    display: flex;
    flex-direction: column;
    height: 300px;
-
    width: 260px;
    align-self: center;
 }
@@ -199,7 +200,7 @@ header p{
    width: 250px;
    margin-top: 20px;
 }
-.container-planos .card_pln .content .content-valor p.valor{
+.container-planos .card_pln .content .content-valor .valor{
    font-size: 1.5em;
 }
 .container-planos .card_pln a{
@@ -233,7 +234,50 @@ header p{
    text-align: center;
    margin-bottom: 40px;
 }
-
+ul.redes-sociais{
+   margin: 40px;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+ul.redes-sociais li{
+   cursor: pointer;
+   background-color: white;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+   border: 5px solid white;
+   transition: all 200ms ease;
+}
+ul.redes-sociais li.instagram{
+   background: white url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
+   background-size: cover;
+}
+ul.redes-sociais li.telegram{
+   background: white url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
+   background-size: cover;
+}
+ul.redes-sociais li.youtube{
+   background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
+   background-size: cover;
+}
+.faq{
+   margin: 40px 0px;
+   font-size: 1.5em;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.faq h1{
+   text-align: center;
+   margin: 40px;
+}
+.faq p{
+   background-color: white;
+   color: black;
+   padding: 10px;
+   box-shadow: -2px 6px 1px rgb(202 201 201);
+}
 footer{
    background-color: white;
    color: black;
