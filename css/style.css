@@ -80,7 +80,7 @@ header p{
 .container-sobre button{
    text-transform: uppercase;
    margin: 40px;
-   width: 350px;
+   min-width: 300px;
    box-shadow: 0px -2px 15px 14px #ff00004f;
    cursor: pointer;
    border: none;
@@ -330,5 +330,10 @@ footer a{
    .container-sobre div.video{
       width: 600px;
       height: 400px;
+   }
+}
+@media (max-width:700px){
+   .container-sobre img{
+      width: 400px;
    }
 }
