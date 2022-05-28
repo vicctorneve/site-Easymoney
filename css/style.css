@@ -276,11 +276,19 @@ ul.redes-sociais li.youtube{
    text-align: center;
    margin: 40px;
 }
-.faq p{
+.faq .pergunta{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    background-color: white;
    color: black;
    padding: 10px;
    box-shadow: -2px 6px 1px rgb(202 201 201);
+}
+.faq .pergunta p.seta{
+   font-weight: bold;
+   font-size: 1.5em;
+   align-self: center;
 }
 footer{
    background-color: white;
