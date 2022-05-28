@@ -111,6 +111,7 @@ header p{
    display: flex;
    margin: auto;
    padding: 20px;
+   justify-content: center;
 }
 .container-depoimentos .depoimentos-flex .depoimento{
    width: 250px;
@@ -130,8 +131,7 @@ header p{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
 }
 #feedback3{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);
-   
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);  
 }
 #feedback4{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
