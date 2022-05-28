@@ -8,6 +8,9 @@
    text-decoration: none;
    list-style: none;
 }
+:root{
+   --cor-vermelho: red;
+}
 body{
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
@@ -42,6 +45,7 @@ header p{
 .container-sobre .container-principal .logo-easymoney{
    display: flex;
    margin: 60px auto;
+   width: 350px;
 }
 .container-sobre .title{
 
@@ -161,7 +165,11 @@ header p{
 }
 .container-planos-title{
    text-align: center;
-   margin: 40px;
+   font-size: 2em;
+   margin: 80px;
+}
+.container-planos-title img{
+   width: 200px;
 }
 .container-planos .card_pln{
    display: flex;
@@ -266,15 +274,18 @@ ul.redes-sociais li.youtube{
    background-size: cover;
 }
 .faq{
-   margin: 40px 0px;
+   margin: 40px;
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
    gap: 10px;
+   max-width: 1500px;
+   margin: auto;
 }
 .faq h1{
    text-align: center;
    margin: 40px;
+   
 }
 .faq .pergunta{
    display: flex;
