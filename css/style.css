@@ -74,7 +74,6 @@ header p{
    position: relative;
    margin: auto;
    width: 100%;
-   
    padding-bottom: 52.25%;
 }
 .container-sobre .embed iframe{
@@ -92,19 +91,18 @@ header p{
 }
 .container-sobre button{
    text-transform: uppercase;
+   font-weight: bold;
+   color: white;
+   padding: 20px;
+   font-size: 1.5em;
    margin: 40px;
-   min-width: 300px;
+   align-self: center;
+   background-color: red;
+   border-radius: 10px;
+   transition: all 300ms ease;
    box-shadow: 0px -2px 15px 14px #ff00004f;
    cursor: pointer;
    border: none;
-   align-self: center;
-   padding: 20px;
-   background-color: red;
-   font-size: 1.5em;
-   color: white;
-   border-radius: 10px;
-   transition: all 300ms ease;
-   font-weight: bold;
 }
 .container-depoimentos{
    background-color: white;
@@ -326,27 +324,26 @@ footer a{
 .decrease:hover{
    -webkit-transform: scale(0.9);
 }
-@media (max-width: 1529px){
-   .container-planos{
-      max-width: 800px;
-   }
-}
-@media (max-width:1150px){
-   .container-sobre div.video{
-      width: 800px;
-   }
-}
 @media (max-width:950px){
    .container-sobre p{
       font-size: 1.5em;
    }
-   .container-sobre div.video{
-      width: 600px;
-      height: 400px;
-   }
 }
-@media (max-width:700px){
+@media (max-width:750px){
    .container-sobre img{
       width: 400px;
+   }
+}
+@media (max-width:500px){
+   .container-sobre img{
+      width: 200px;
+   }
+}
+@media (max-width:430px){
+   .container-sobre button{
+      font-size: 1em;
+   }
+   .container-sobre .container-principal .logo-easymoney{
+      width: 200px;
    }
 }
