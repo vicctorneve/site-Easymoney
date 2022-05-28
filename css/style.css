@@ -39,6 +39,10 @@ header p{
    width: 90VW;
    margin: auto;
 }
+.container-sobre .container-principal .logo-easymoney{
+   display: flex;
+   margin: 60px auto;
+}
 .container-sobre .title{
 
    margin: 30px auto;
