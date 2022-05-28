@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
 
 *{
    padding: 0px;
@@ -20,7 +21,7 @@ header{
 }
 header p{
    text-transform: uppercase;
-   font-size: 1.5em;
+   font-size: 1.3em;
 }
 .container-sobre{
    flex-direction: column;
@@ -47,8 +48,10 @@ header p{
 .container-sobre p{
    color: white;
    text-align: center;
+   font-weight: bold;
    font-size: 2.5em;
    margin: 20px;
+   text-shadow: -8px -4px 9px #ff00008c;
 }
 .container-sobre p span.p-red{
    color: red;
@@ -62,6 +65,10 @@ header p{
    box-shadow: -2px -2px 6px 4px rgba(255, 0, 0, 0.616);
 }
 .container-sobre a{
+   margin: auto;
+}
+.container-sobre img{
+   width: 600px;
    margin: auto;
 }
 .container-sobre button{
@@ -78,6 +85,7 @@ header p{
    color: white;
    border-radius: 10px;
    transition: all 300ms ease;
+   font-weight: bold;
 }
 .container-depoimentos{
    background-color: gray;
@@ -86,8 +94,10 @@ header p{
 .container-depoimentos h1{
    text-align: center;
    color: white;
-   padding: 20px;
+   padding: 40px;
    font-weight: bold;
+   font-size: 2em;
+   text-transform: uppercase;
 }
 .container-depoimentos .depoimentos-grid{
    display: grid;
@@ -175,17 +185,19 @@ header p{
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
-
    height: 300px;
 
-   align-items: center;
+   width: 260px;
+   align-self: center;
 }
 .container-planos .card_pln .content .content-valor{
    display: flex;
    gap: 10px;
    align-items: center;
+   justify-content: center;
    height: 100px;
    width: 250px;
+   margin-top: 20px;
 }
 .container-planos .card_pln .content .content-valor p.valor{
    font-size: 1.5em;
@@ -195,36 +207,31 @@ header p{
 }
 .container-planos .card_pln button{
    border-radius: 10px;
-   background-color: aqua;
+   background-color: red;
    border: none;
    padding: 10px;
    width: 250px;
-   margin: 20px auto;
+   margin-bottom: 20px;
    transition: all 300ms ease;
    cursor: pointer;
-   box-shadow: 0px 0px 10px 10px rgba(0, 255, 255, 0.274);
+   box-shadow: 0px -2px 15px 14px #ff00004f;
+   color: white;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+.container-planos .card_pln .btn-premium{
+   margin-bottom: 80px;
+}
+.container-planos .card_pln .content .descricao{
+   font-family: Arial, Helvetica, sans-serif;
 }
 .container-planos .card_pln .content p.desc{
    font-size: 20px;
 }
-.container-grp-free{
-   background-color: black;
-   color: white;
-   padding: 20px;
+.container-planos .card_pln .adesao{
+   font-size: 1.2em;
    text-align: center;
-}
-.container-grp-free h1{
-   font-size: 2em;
-   margin: 20px 0px;
-}
-.container-grp-free a{
-   color: white;
-}
-.container-grp-free p{
-   margin: 5px;
-}
-.container-grp-free p:hover{
-   text-decoration: underline;
+   margin-bottom: 40px;
 }
 
 footer{
