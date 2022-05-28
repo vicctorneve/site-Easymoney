@@ -105,15 +105,14 @@ header p{
    font-size: 2em;
    text-transform: uppercase;
 }
-.container-depoimentos .depoimentos-grid{
-   display: grid;
-   justify-content: center;
+.container-depoimentos .depoimentos-flex{
+   max-width: 1500px;
+   flex-wrap: wrap;
+   display: flex;
+   margin: auto;
    padding: 20px;
-   grid-template-columns: repeat(auto-fill, 300px);
-   
 }
-.container-depoimentos .depoimentos-grid .depoimento{
-   list-style: none;
+.container-depoimentos .depoimentos-flex .depoimento{
    width: 250px;
    height: 400px;
    margin: 20px;
