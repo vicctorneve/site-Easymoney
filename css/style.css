@@ -9,7 +9,7 @@
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
-   list-style: none;
+   
 }
 :root{
    --cor-vermelho: red;
@@ -51,7 +51,6 @@ header p{
    width: 350px;
 }
 .container-sobre .title{
-
    margin: 30px auto;
 }
 .container-sobre p{
@@ -110,6 +109,7 @@ header p{
 .container-depoimentos{
    background-color: white;
    height: auto;
+   list-style: none;
 }
 .container-depoimentos h1{
    text-align: center;
@@ -215,6 +215,11 @@ header p{
    height: 300px;
    width: 260px;
    align-self: center;
+   
+   
+}
+.container-planos .card_pln .content ul{
+   list-style: url('../assets/image/simbolo-descrição-planos-17px.png');
 }
 .container-planos .card_pln .content .content-valor{
    display: flex;
@@ -299,6 +304,7 @@ ul.redes-sociais{
    display: flex;
    justify-content: center;
    gap: 20px;
+   list-style: none;
 }
 ul.redes-sociais li{
    cursor: pointer;
