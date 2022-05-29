@@ -321,10 +321,15 @@ ul.redes-sociais li.youtube{
    background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
 }
+p.direitos{
+   text-align: center;
+   margin: 80px;
+}
 footer{
    background-color: white;
    color: black;
    text-align: center;
+   
 }
 footer a{
    color: black;
