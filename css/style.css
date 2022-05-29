@@ -1,5 +1,8 @@
 @charset "utf-8";
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300&display=swap');
+
 
 *{
    padding: 0px;
@@ -256,6 +259,41 @@ header p{
    text-align: center;
    margin-bottom: 40px;
 }
+article.faq{
+   max-width: 1000px;
+   margin: auto;
+   color: black;
+}
+article.faq h1{
+   color: white;
+   margin: 40px 0px;
+   text-align: center;
+   font-size: 1.5em;
+}
+.pergunta{
+   font-family: 'Montserrat', sans-serif;
+   padding: 10px;
+   background-color: white;
+   cursor: pointer;
+   margin: 10px 0px;
+   box-shadow: 0px 5px 1px rgb(163 160 160);
+}
+.pergunta .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.resposta{
+   height: 0;
+   overflow: hidden;
+   transition: 200ms;
+   font-weight: bold;
+}
+div.pergunta .ativo{
+   height: auto;
+   padding: 20px 0px;
+   transition: 200ms;
+}
 ul.redes-sociais{
    margin: 40px;
    display: flex;
@@ -282,33 +320,6 @@ ul.redes-sociais li.telegram{
 ul.redes-sociais li.youtube{
    background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
-}
-.faq{
-   margin: 40px;
-   font-size: 1.5em;
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   max-width: 1500px;
-   margin: auto;
-}
-.faq h1{
-   text-align: center;
-   margin: 40px;
-   
-}
-.faq .pergunta{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: white;
-   color: black;
-   padding: 10px;
-   box-shadow: -2px 6px 1px rgb(202 201 201);
-}
-.faq .pergunta p.seta{
-   font-weight: bold;
-   align-self: center;
 }
 footer{
    background-color: white;
@@ -337,6 +348,10 @@ footer a{
 @media (max-width:500px){
    .container-sobre img{
       width: 200px;
+   }
+   ul.redes-sociais li{
+      width: 50px;
+      height: 50px;
    }
 }
 @media (max-width:430px){

@@ -40,7 +40,8 @@
          <li class="depoimento" id="feedback9"></li>
       </ul>
    </section>
-   <section ><!--PLANOS-->
+   <section class="container-planos-faq" id="container-planos-faq
+   "><!--PLANOS-->
       <article class="container-planos-title" id="planos">
          <img src="assets/image/logo-EM-500px.jpeg" alt="Logo Easymoney">
          <h1>Planos Vip</h1>
@@ -133,33 +134,63 @@
          </article>
       </div>
       <article class="faq">
-         
-         <h1>Perguntas Frenquetes - FAQ </h1>
-         <div class="pergunta">
-            <p>O pagamento é seguro ?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>
-         <div class="pergunta">
-            <p>Quais são os meios de pagamento ?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>
-         <div class="pergunta">
-            <p>Posso usar o robô no celular ?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>
-         <div class="pergunta">
-            <p>O robô funciona 24 horas?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>
-         <div class="pergunta">
-            <p>Posso parcelar?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>
-         <div class="pergunta">
-            <p>Tenho suporte após a compra?</p>
-            <p class="seta">&#x2B9F</p>
-         </div>    
+         <h1>Perguntas Frequentes - FAQ</h1>
+         <div class="pergunta" onclick="showHide('#resposta1')">
+            <div class="flex">
+               <p>O pagamento é seguro ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta1">
+               <p>Usamos a HUBLA e a KIWIFY como gateway de pagamentos (que é uma plataforma sólida e reconhecida).</p>
+            </div>
+         </div> 
+         <div class="pergunta" onclick="showHide('#resposta2')">
+            <div class="flex">
+               <p>Quais são as formas de pagamento ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta2">
+               <p>Utilizamos o PIX, Cartão de crédito e boleto.</p>
+            </div>
+         </div> 
+         <div class="pergunta" onclick="showHide('#resposta3')">
+            <div class="flex">
+               <p>Posso usar o robô no meu celular ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta3">
+               <p>Sim. É possível receber os sinais pelo seu celular, basta baixar o app do Telegram.</p>
+            </div>
+         </div> 
+         <div class="pergunta" onclick="showHide('#resposta4')">
+            <div class="flex">
+               <p>O bot funciona 24h ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta4">
+               <p>Nosso robô funciona todos os dias, 24 horas por dia. São mais de 700 sinais diários.</p>
+            </div>
+         </div> 
+         <div class="pergunta" onclick="showHide('#resposta5')">
+            <div class="flex">
+               <p>Posso parcelar a compra ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta5">
+               <p>Apenas o plano vitalício pode-se parcelar em até 12x.</p>
+            </div>
+         </div> 
+         <div class="pergunta" onclick="showHide('#resposta6')">
+            <div class="flex">
+               <p>Tenho suporte para me auxiliar ?</p>
+               <p class="seta">&#x2B9F</p>
+            </div>
+            <div class="resposta" id="resposta6">
+               <p>Sim. Contamos com suporte de segunda a sexta. Caso tenha dúvidas entre em contato pelo Instagram ou Telegram.</p>
+            </div>
+         </div> 
       </article>
+      <script src="js/script-faq.js"></script>
       <ul class="redes-sociais">
          <a href="https://www.instagram.com/easymoneybl/" target="_blank"><li class="instagram decrease"></li></a>
          <a href="https://t.me/boteasyfree" target="_blank"><li class="telegram decrease"></li></a>
