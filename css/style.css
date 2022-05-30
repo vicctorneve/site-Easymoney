@@ -356,12 +356,17 @@ p.direitos{
 }
 @media (max-width:430px){
    .container-sobre img{
-      width: 250px;
+      width: 300px;
    }
    .container-sobre button{
       font-size: 1em;
    }
    .container-sobre .container-principal .logo-easymoney{
       width: 200px;
+   }
+}
+@media (max-width:300px){
+   .container-sobre img{
+      width: 250px;
    }
 }
