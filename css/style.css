@@ -35,13 +35,12 @@ header p{
    flex-direction: column;
    display: flex;
    color: black;
-   padding: 80px 0px;
+   padding: 40px 0px;
    height: auto;
    background: gray url(../assets/image/background-sobre.jpg) center center no-repeat fixed;
    background-size: cover;
 }
 .container-sobre .container-principal{
-   padding: 20px;
    width: 90VW;
    margin: auto;
 }
@@ -51,24 +50,21 @@ header p{
    width: 350px;
 }
 .container-sobre .title{
-   margin: 50px auto;
+   margin: 30px auto;
 }
-.container-sobre p{
+.container-sobre .title p{
    color: white;
    text-align: center;
+   font-size: 2em;
    font-weight: bold;
-   font-size: 2.5em;
    text-shadow: -8px -4px 9px #ff00008c;
 }
-.container-sobre p span.p-red{
+.container-sobre .title span.p-red{
    color: red;
 }
 .container-sobre .container-video{
    max-width: 1000px;
    margin: auto;
-   padding: 5px;
-   border-radius: 15px;
-   box-shadow: -2px -2px 6px 4px rgba(255, 0, 0, 0.616);
 }
 .container-sobre .embed{
    background-color: black;
@@ -78,6 +74,8 @@ header p{
    padding-bottom: 52.25%;
 }
 .container-sobre .embed iframe{
+   border-radius: 10px;
+   box-shadow: -2px -2px 6px 4px rgba(255, 0, 0, 0.616);
    position: absolute;
    width: 100%;
    height: 100%;
@@ -88,7 +86,7 @@ header p{
 }
 .container-sobre img{
    width: 600px;
-   margin: 20px auto 50px auto;
+   margin: 30px auto;
 }
 .container-sobre button{
    text-transform: uppercase;
@@ -104,6 +102,7 @@ header p{
    cursor: pointer;
    border: none;
 }
+/* CONTAINER DEPOIMENTOS */
 .container-depoimentos{
    background-color: white;
    height: auto;
@@ -116,6 +115,7 @@ header p{
    font-weight: bold;
    font-size: 2em;
    text-transform: uppercase;
+   
 }
 .container-depoimentos .depoimentos-flex{
    max-width: 1500px;
@@ -323,36 +323,31 @@ ul.redes-sociais li.youtube{
 }
 p.direitos{
    text-align: center;
-   margin: 80px;
-}
-footer{
-   background-color: white;
-   color: black;
-   text-align: center;
-   
-}
-footer a{
-   color: black;
-   text-decoration: underline;
+   margin: 40px;
 }
 /* ANIMAÇÃO */
 
 .decrease:hover{
    -webkit-transform: scale(0.9);
 }
+
+/* Medias query */
 @media (max-width:950px){
    .container-sobre p{
       font-size: 1.5em;
    }
 }
 @media (max-width:750px){
+   .container-sobre .title p{
+      font-size: 1.5em;
+   }
    .container-sobre img{
-      width: 400px;
+      width: 450px;
    }
 }
 @media (max-width:500px){
    .container-sobre img{
-      width: 200px;
+      width: 350px;
    }
    ul.redes-sociais li{
       width: 50px;
@@ -360,6 +355,9 @@ footer a{
    }
 }
 @media (max-width:430px){
+   .container-sobre img{
+      width: 250px;
+   }
    .container-sobre button{
       font-size: 1em;
    }
