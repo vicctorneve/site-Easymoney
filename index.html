@@ -5,8 +5,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>EasyMoney</title>
+   <!-- CSS -->
+
    <link rel="stylesheet" href="css/style.css">
+
+   <!-- SWIPER CSS -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
    <link rel="icon" type="image/x-png" href="assets/image/favicon.png">
+
    <meta name="description" content="EASYMONEY é uma consultoria que conta com um Robô que trabalha 24 horas por dia, todos os dias da semana, buscando as melhores oportunidades no double e crash, e assim que encontra uma oportunidade que tenha alta chance de lucrar, ele envia o sinal para que o aluno faça a entrada.">
 </head>
 <body>
@@ -28,20 +35,59 @@
       <img src="assets/image/img1.png" alt="">
       <a href="#planos"><button class="decrease">Quero receber sinais</button></a>
    </section>
-   <section class="container-depoimentos" id="depoimentos"> <!--FEEDBACKS-->
-      <h1>Vejam alguns depoimentos dos nossos clientes</h1>
-      <ul class="depoimentos-flex">
-         <li class="depoimento" id="feedback1"></li>
-         <li class="depoimento" id="feedback2"></li>
-         <li class="depoimento" id="feedback3"></li>
-         <li class="depoimento" id="feedback4"></li>
-         <li class="depoimento" id="feedback5"></li>
-         <li class="depoimento" id="feedback6"></li>
-         <li class="depoimento" id="feedback7"></li>
-         <li class="depoimento" id="feedback8"></li>
-         <li class="depoimento" id="feedback9"></li>
-      </ul>
+   <!--FEEDBACKS-->
+   
+   <section class="container-feedback">
+      <h1>VEJAM ALGUNS DEPOIMENTOS DOS NOSSOS CLIENTES</h1>
+      <article class="carousel-feedback">
+         <div class="slider-container swiper">
+            <div class="slide-content">
+               <ul class="card-wrapper swiper-wrapper">
+                  <li class="card swiper-slide" id="feedback1">
+                     <!-- Imagem de feedback1 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback2">
+                     <!-- Imagem de feedback2 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback3">
+                     <!-- Imagem de feedback3 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback4">
+                     <!-- Imagem de feedback4 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback5">
+                     <!-- Imagem de feedback5 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback6">
+                     <!-- Imagem de feedback6 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback7">
+                     <!-- Imagem de feedback7 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback8">
+                     <!-- Imagem de feedback8 -->
+                  </li>
+                  <li class="card swiper-slide" id="feedback9">
+                     <!-- Imagem de feedback9 -->
+                  </li>
+               </ul>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </article>
    </section>
+
+   <!-- SWIPER JS -->
+
+   <script src="js/swiper-bundle.min.js"></script>
+
+   <!-- JAVASCRIPT -->
+
+   <script src="js/script-carousel-feedback.js"></script>
+
+   <!--FEEDBACKS-->
    <section class="container-planos-faq" id="container-planos-faq
    "><!--PLANOS-->
       <article class="container-planos-title" id="planos"> <!--Titulo planos-->

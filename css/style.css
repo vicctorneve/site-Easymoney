@@ -102,67 +102,103 @@ header p{
    cursor: pointer;
    border: none;
 }
-/* CONTAINER DEPOIMENTOS */
-.container-depoimentos{
+/* CONTAINER FEEDBACK */
+
+.container-feedback{
    background-color: white;
-   height: auto;
-   list-style: none;
+   padding: 40px 0px;
 }
-.container-depoimentos h1{
+.container-feedback h1{
    text-align: center;
    color: black;
-   padding: 40px;
-   font-weight: bold;
-   font-size: 2em;
-   text-transform: uppercase;
-   
 }
-.container-depoimentos .depoimentos-flex{
-   max-width: 1500px;
-   flex-wrap: wrap;
-   display: flex;
-   margin: auto;
+.carousel-feedback{
    padding: 20px;
+   height: auto;
+   display: flex;
    justify-content: center;
+   align-items: center;
 }
-.container-depoimentos .depoimentos-flex .depoimento{
-   width: 250px;
-   height: 400px;
-   margin: 20px;
-   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
+.carousel-feedback .slider-container{
+   max-width: 1200px;
+   width: 100%;
+   background-color: gray;
+   padding: 40px 0px;
+}
+.carousel-feedback .slide-content{
+   margin: 0px 40px;
+   overflow: hidden;
+}
+.carousel-feedback .card{
    background-color: black;
-   background-size: cover;
+   border-radius: 10px;
+   list-style: none;
+   height: 450px;
+   background-size: contain;
+   background-attachment: scroll;
    background-repeat: no-repeat;
    background-position: center center;
-}  
-/*imagens de feedback*/
+}
 #feedback1{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-1.jpeg);
 }
 #feedback2{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-2.jpeg);
 }
 #feedback3{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);  
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-3.jpeg);
 }
 #feedback4{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-4.jpeg);
 }
 #feedback5{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-5.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-5.jpeg);
 }
 #feedback6{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-6.jpeg);
 }
 #feedback7{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-7.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-7.jpeg);
 }
 #feedback8{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-8.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-8.jpeg);
 }
 #feedback9{
-   background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
+   background-image: url(/assets/image/feedbacks/feedback-easymoney-9.jpeg);
 }
+.swiper-navBtn{
+   color: rgb(219, 14, 14);
+   transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+   color: rgb(167, 10, 10);
+}
+.swiper-pagination-bullet{
+   background-color: red;
+}
+.swiper-pagination-bullet-active{
+   background-color: rgb(167, 10, 10);
+}
+
+@media screen and (max-width:768px){
+   .slide-content{
+      margin: 0 10px;
+   }
+   .swiper-navBtn{
+      display: none;
+   }
+}
+@media (max-width:650px){
+   .carousel-feedback .card{
+      height: 350px;
+   }
+}
+@media (max-width:320px){
+   .carousel-feedback .card{
+      height: 150px;
+   }
+}
+
 /* CONTAINER PLANOS */
 .container-planos{
    position: relative;
@@ -332,6 +368,7 @@ p.direitos{
 }
 
 /* Medias query */
+
 @media (max-width:950px){
    .container-sobre p{
       font-size: 1.5em;
