@@ -127,7 +127,6 @@ header p{
 }
 .carousel-feedback .slide-content{
    margin: 0px 40px;
-   overflow: hidden;
 }
 .carousel-feedback .card{
    background-color: black;
@@ -167,11 +166,11 @@ header p{
    background-image: url(/assets/image/feedbacks/feedback-easymoney-9.jpeg);
 }
 .swiper-navBtn{
-   color: rgb(219, 14, 14);
+   color: red;
    transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-   color: rgb(167, 10, 10);
+   color: blue;
 }
 .swiper-pagination-bullet{
    background-color: red;
