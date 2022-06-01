@@ -109,8 +109,8 @@ header p{
    padding: 40px 0px;
 }
 .container-feedback h1{
-   text-align: center;
    color: black;
+   text-align: center;
 }
 .carousel-feedback{
    padding: 20px;
@@ -120,63 +120,32 @@ header p{
    align-items: center;
 }
 .carousel-feedback .slider-container{
-   max-width: 1200px;
-   width: 100%;
-   background-color: gray;
+   max-width: 1500px;
+   width: 1000px;
+   background-color: rgba(0, 0, 0, 0.747);
    padding: 40px 0px;
+   border-radius: 10px;
 }
 .carousel-feedback .slide-content{
    margin: 0px 40px;
+   overflow: hidden;
 }
 .carousel-feedback .card{
+   
    background-color: black;
    border-radius: 10px;
-   list-style: none;
-   height: 450px;
-   background-size: contain;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
-   background-position: center center;
 }
-#feedback1{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-1.jpeg);
-}
-#feedback2{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-2.jpeg);
-}
-#feedback3{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-3.jpeg);
-}
-#feedback4{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-4.jpeg);
-}
-#feedback5{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-5.jpeg);
-}
-#feedback6{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-6.jpeg);
-}
-#feedback7{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-7.jpeg);
-}
-#feedback8{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-8.jpeg);
-}
-#feedback9{
-   background-image: url(/assets/image/feedbacks/feedback-easymoney-9.jpeg);
+.carousel-feedback .card img{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   border-radius: 20px;
 }
 .swiper-navBtn{
-   color: red;
-   transition: color 0.3s ease;
+   transition: color 200ms ease;
 }
 .swiper-navBtn:hover{
-   color: blue;
-}
-.swiper-pagination-bullet{
-   background-color: red;
-}
-.swiper-pagination-bullet-active{
-   background-color: rgb(167, 10, 10);
+   color: rgb(36, 149, 241);
 }
 
 @media screen and (max-width:768px){
@@ -185,16 +154,6 @@ header p{
    }
    .swiper-navBtn{
       display: none;
-   }
-}
-@media (max-width:650px){
-   .carousel-feedback .card{
-      height: 350px;
-   }
-}
-@media (max-width:320px){
-   .carousel-feedback .card{
-      height: 150px;
    }
 }
 
