@@ -122,7 +122,7 @@ header p{
 .carousel-feedback .slider-container{
    max-width: 1500px;
    width: 1000px;
-   background-color: rgba(0, 0, 0, 0.747);
+   background-color: gray;
    padding: 40px 0px;
    border-radius: 10px;
 }
