@@ -131,7 +131,7 @@ header p{
    overflow: hidden;
 }
 .carousel-feedback .card{
-   
+   width: 300px;
    background-color: black;
    border-radius: 10px;
 }
