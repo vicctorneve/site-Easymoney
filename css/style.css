@@ -101,62 +101,68 @@ header p{
    box-shadow: 0px -2px 15px 14px #ff00004f;
    cursor: pointer;
    border: none;
+   
 }
 /* CONTAINER FEEDBACK */
-
-.container-feedback{
+.container-depoimentos{
    background-color: white;
-   padding: 40px 0px;
-}
-.container-feedback h1{
-   color: black;
-   text-align: center;
-}
-.carousel-feedback{
-   padding: 20px;
    height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   list-style: none;
 }
-.carousel-feedback .slider-container{
+.container-depoimentos h1{
+   text-align: center;
+   color: black;
+   padding: 40px;
+   font-weight: bold;
+   font-size: 2em;
+   text-transform: uppercase;
+}
+.container-depoimentos .depoimentos-flex{
    max-width: 1500px;
-   width: 1000px;
-   background-color: gray;
-   padding: 40px 0px;
-   border-radius: 10px;
-}
-.carousel-feedback .slide-content{
-   margin: 0px 40px;
-   overflow: hidden;
-}
-.carousel-feedback .card{
-   width: 300px;
-   background-color: black;
-   border-radius: 10px;
-}
-.carousel-feedback .card img{
+   flex-wrap: wrap;
    display: flex;
+   margin: auto;
+   padding: 20px;
    justify-content: center;
-   width: 100%;
-   border-radius: 20px;
 }
-.swiper-navBtn{
-   transition: color 200ms ease;
+.container-depoimentos .depoimentos-flex .depoimento{
+   width: 250px;
+   height: 400px;
+   margin: 20px;
+   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
+   background-color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}  
+/*imagens de feedback*/
+#feedback1{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-1.jpeg);
 }
-.swiper-navBtn:hover{
-   color: rgb(36, 149, 241);
+#feedback2{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-2.jpeg);
 }
-
-@media screen and (max-width:768px){
-   .slide-content{
-      margin: 0 10px;
-   }
-   .swiper-navBtn{
-      display: none;
-   }
+#feedback3{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-3.jpeg);  
 }
-
+#feedback4{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-4.jpeg);
+}
+#feedback5{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-5.jpeg);
+}
+#feedback6{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-6.jpeg);
+}
+#feedback7{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-7.jpeg);
+}
+#feedback8{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-8.jpeg);
+}
+#feedback9{
+   background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
+}
 /* CONTAINER PLANOS */
 .container-planos{
    position: relative;

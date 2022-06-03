@@ -12,11 +12,10 @@
    <!-- CSS -->
    <link rel="stylesheet" href="css/style.css">
    
-   <!-- SWIPER CSS -->
-   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-   
-   <title>EasyMoney</title>
+   <!-- Jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+   <title>EasyMoney</title>
 </head>
 <body>
    <header>
@@ -35,40 +34,27 @@
          </div>
       </article>
       <img src="assets/image/img1.png" alt="">
-      <a href="#planos"><button class="decrease" id="scroll">Quero receber sinais</button></a>
-      <script src="js/script-scroll.js"></script>
+      <a href="#planos" id="btntoplanos"><button class="decrease">Quero receber sinais</button></a>
+      
    </section>
    <!--FEEDBACKS-->
-   
-   <section class="container-feedback">
-      <h1>VEJAM ALGUNS DEPOIMENTOS DOS NOSSOS CLIENTES</h1>
-      <article class="carousel-feedback">
-         <div class="slider-container swiper">
-            <div class="slide-content">
-               <div class="card-wrapper swiper-wrapper">
-                  <div class="card swiper-slide" id="feedback1">
-                     1
-                  </div>
-                  
-               </div>
-            </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-         </div>
-      </article>
+   <section class="container-depoimentos" id="depoimentos"> 
+      <h1>Vejam alguns depoimentos dos nossos clientes</h1>
+      <ul class="depoimentos-flex">
+         <li class="depoimento" id="feedback1"></li>
+         <li class="depoimento" id="feedback2"></li>
+         <li class="depoimento" id="feedback3"></li>
+         <li class="depoimento" id="feedback4"></li>
+         <li class="depoimento" id="feedback5"></li>
+         <li class="depoimento" id="feedback6"></li>
+         <li class="depoimento" id="feedback7"></li>
+         <li class="depoimento" id="feedback8"></li>
+         <li class="depoimento" id="feedback9"></li>
+      </ul>
    </section>
 
-   <!-- SWIPER JS -->
-
-   <script src="js/swiper-bundle.min.js"></script>
-
-   <!-- JAVASCRIPT -->
-
-   <script src="js/script-feedback.js"></script>
-
-   <!--FEEDBACKS-->
-   <section class="container-planos-faq" id="container-planos-faq
+   <!--FEEDBACKS END-->
+   <section class="container-planos-faq" id="container-planos
    "><!--PLANOS-->
       <article class="container-planos-title" id="planos"> <!--Titulo planos-->
          <img src="assets/image/logo-EM-500px.jpeg" alt="Logo Easymoney">
@@ -163,7 +149,7 @@
          
          </article>
       </div>
-      <article class="faq">
+      <article class="faq" id="faq">
          <h1>Perguntas Frequentes - FAQ</h1>
          <div class="pergunta" onclick="showHide('#resposta1')">
             <div class="flex">
@@ -220,6 +206,7 @@
             </div>
          </div> 
       </article>
+      <script src="js/script-scroll.js"></script>
       <script src="js/script-faq.js"></script>
       <ul class="redes-sociais">
          <a href="https://www.instagram.com/easymoneybl/" target="_blank"><li class="instagram decrease"></li></a>
