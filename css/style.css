@@ -192,6 +192,7 @@ header p{
    background-color: rgba(0, 0, 0, 0.479);
    padding: 10px;
    border-radius: 20px;
+   margin: 40px 0px;
    box-shadow:0px 0px 44px -41px red;
 }
 .container-planos .card_pln .card-title{
