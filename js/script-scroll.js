@@ -1,10 +1,10 @@
-//jquery scroll-animate
+const element = document.body;
 
-$('#btntoplanos').click(function(e){
-   e.preventDefault();
-   var id = $(this).attr('href');
-       targetOffSet = $(id).offset().top;
-   $('html, body').animate({
-      scrollTop: targetOffSet
-   },500);
-});
+function scrollTo(element) {
+   document.querySelector(element).scrollIntoView({behavior: 'smooth'});
+}
+
+document.querySelector("#btntoplanos").addEventListener('click', function(event){
+   event.preventDefault();
+   scrollTo("#planos");
+})
