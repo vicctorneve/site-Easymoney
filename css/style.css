@@ -9,7 +9,7 @@
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
-   
+   font-family: ;
 }
 :root{
    --cor-vermelho: red;
@@ -184,6 +184,7 @@ header p{
    width: 200px;
 }
 .container-planos .card_pln{
+   
    display: flex;
    flex-direction: column;
    position: relative;
@@ -294,14 +295,21 @@ div.pergunta .ativo{
    padding: 20px 0px;
    transition: 200ms;
 }
-ul.redes-sociais{
+.redes-socias{
+   margin: 40px;
+}
+.redes-socias h1{
+   text-align: center;
+   font-size: 2em;
+}
+ul.redes-sociais-flex{
    margin: 40px;
    display: flex;
    justify-content: center;
    gap: 20px;
    list-style: none;
 }
-ul.redes-sociais li{
+ul.redes-sociais-flex li{
    cursor: pointer;
    background-color: white;
    width: 100px;
@@ -310,15 +318,15 @@ ul.redes-sociais li{
    border: 5px solid white;
    transition: all 200ms ease;
 }
-ul.redes-sociais li.instagram{
+ul.redes-sociais-flex li.instagram{
    background: white url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
    background-size: cover;
 }
-ul.redes-sociais li.telegram{
+ul.redes-sociais-flex li.telegram{
    background: white url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
    background-size: cover;
 }
-ul.redes-sociais li.youtube{
+ul.redes-sociais-flex li.youtube{
    background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
 }
