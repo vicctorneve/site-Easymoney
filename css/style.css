@@ -284,6 +284,9 @@ article.faq h1{
    align-items: center;
    justify-content: space-between;
 }
+.pergunta .flex img{
+   width: 20px;
+}
 .resposta{
    height: 0;
    overflow: hidden;
