@@ -349,13 +349,13 @@ p.direitos{
    transition: .3s;
 }
 [data-anime="left"]{
-   transform: translateX(50px);
+   transform: translateX(20px);
 }
 [data-anime="right"]{
-   transform: translateX(-50px);
+   transform: translateX(-20px);
 }
 [data-anime="up"]{
-   transform: translateY(50px);
+   transform: translateY(20px);
 }
 .animate{
    
