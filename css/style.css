@@ -133,6 +133,7 @@ header p{
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
+   border-radius: 10px;
 }  
 /*imagens de feedback*/
 #feedback1{
@@ -341,7 +342,12 @@ p.direitos{
    margin: 40px;
 }
 /* ANIMAÇÃO */
-
+.grow{
+   transition: 200ms;
+}
+.grow:hover{
+   -webkit-transform: scale(1.1);
+}
 .decrease:hover{
    -webkit-transform: scale(0.9);
 }
