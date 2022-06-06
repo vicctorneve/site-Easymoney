@@ -12,6 +12,9 @@
    <!-- CSS -->
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- Biblioteca CSS ANIMATE SCROLL -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
    <title>EasyMoney</title>
 </head>
 <body>
@@ -58,8 +61,8 @@
          <h1>Planos Vip</h1>
          <p>Sinais 24 horas</p>
       </article>
-      <div class="container-planos" id="planos">
-         <article class="card_pln"><!--PLANO BRONZE-->
+      <article class="container-planos" id="planos" >
+         <article class="card_pln" data-aos="fade-right"><!--PLANO BRONZE-->
             <div class="card-title">
                <h2>Plano Bronze</h2>
                <p>Popular</p>
@@ -80,7 +83,7 @@
             <a href="https://hub.la/g/iTJR5gaVMHWuXa4WnqYd" target="_blank"><button class="decrease">COMPRAR</button></a>
             <p class="adesao">+ R$ 79,90 taxa de adesão</p>
          </article>
-         <article class="card_pln"> <!--PLANO PRATA-->
+         <article class="card_pln" data-aos="fade-right"> <!--PLANO PRATA-->
             <div class="card-title">
                <h2>Plano Prata</h2>
                <p>Mais assinado</p>
@@ -101,7 +104,7 @@
             <a href="https://hub.la/g/D9WpMlPvtm8bTiVOzM0x" target="_blank"><button class="decrease">COMPRAR</button></a>
             <p class="adesao">+ R$ 79,90 taxa de adesão</p>
          </article>
-         <article class="card_pln"> <!--PLANO OURO-->
+         <article class="card_pln" data-aos="fade-left"> <!--PLANO OURO-->
             <div class="card-title">
                <h2>Plano Ouro</h2>
                <p>Popular</p>
@@ -122,13 +125,12 @@
             <a href="https://hub.la/g/jU7Ky92mA9ujCfGBizGf" target="_blank"><button class="decrease">COMPRAR</button></a>
             <p class="adesao">+ R$ 158,00 taxa de adesão</p>
          </article>
-         <article class="card_pln"> <!--PLANO PREMIUM-->
+         <article class="card_pln" data-aos="fade-left"> <!--PLANO PREMIUM-->
             <div class="card-title"> 
                <h2>Plano Premium</h2>
                <p>Vitalicio</p>
             </div>
             <div class="content">
-               <img src="assets/image/" alt="">
                <ul>
                   <li>Bot para Crash e Double</li>
                   <li>24h Online</li>
@@ -143,67 +145,68 @@
             </div>
             <a href="https://hub.la/g/nEAD2bOo80ZPjj2yHgAB" target="_blank"><button class="decrease btn-premium">COMPRAR</button></a>
             <p class="adesao">Sem taxa de adesão</p>
-         
+         </div>
          </article>
-      </div>
+      </article>
       <article class="faq" id="faq">
          <h1>Perguntas Frequentes - FAQ</h1>
-         <div class="pergunta" onclick="showHide('#resposta1')">
-            <div class="flex">
-               <p>O pagamento é seguro ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+         <div data-aos="fade-right" class="">
+            <div class="pergunta" onclick="showHide('#resposta1')">
+               <div class="flex">
+                  <p>O pagamento é seguro ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta1">
+                  <p>Usamos a HUBLA e a KIWIFY como gateway de pagamentos (que é uma plataforma sólida e reconhecida).</p>
+               </div>
+            </div> 
+            <div class="pergunta" onclick="showHide('#resposta2')">
+               <div class="flex">
+                  <p>Quais são as formas de pagamento ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta2">
+                  <p>Utilizamos o PIX, Cartão de crédito e boleto.</p>
+               </div>
+            </div> 
+            <div class="pergunta" onclick="showHide('#resposta3')">
+               <div class="flex">
+                  <p>Posso usar o robô no meu celular ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta3">
+                  <p>Sim. É possível receber os sinais pelo seu celular, basta baixar o app do Telegram.</p>
+               </div>
+            </div> 
+            <div class="pergunta" onclick="showHide('#resposta4')">
+               <div class="flex">
+                  <p>O bot funciona 24h ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta4">
+                  <p>Nosso robô funciona todos os dias, 24 horas por dia. São mais de 700 sinais diários.</p>
+               </div>
+            </div> 
+            <div class="pergunta" onclick="showHide('#resposta5')">
+               <div class="flex">
+                  <p>Posso parcelar a compra ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta5">
+                  <p>Apenas o plano vitalício pode-se parcelar em até 12x.</p>
+               </div>
+            </div> 
+            <div class="pergunta" onclick="showHide('#resposta6')">
+               <div class="flex">
+                  <p>Tenho suporte para me auxiliar ?</p>
+                  <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
+               </div>
+               <div class="resposta" id="resposta6">
+                  <p>Sim. Contamos com suporte de segunda a sexta. Caso tenha dúvidas entre em contato pelo Instagram ou Telegram.</p>
+               </div>
             </div>
-            <div class="resposta" id="resposta1">
-               <p>Usamos a HUBLA e a KIWIFY como gateway de pagamentos (que é uma plataforma sólida e reconhecida).</p>
-            </div>
-         </div> 
-         <div class="pergunta" onclick="showHide('#resposta2')">
-            <div class="flex">
-               <p>Quais são as formas de pagamento ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
-            </div>
-            <div class="resposta" id="resposta2">
-               <p>Utilizamos o PIX, Cartão de crédito e boleto.</p>
-            </div>
-         </div> 
-         <div class="pergunta" onclick="showHide('#resposta3')">
-            <div class="flex">
-               <p>Posso usar o robô no meu celular ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
-            </div>
-            <div class="resposta" id="resposta3">
-               <p>Sim. É possível receber os sinais pelo seu celular, basta baixar o app do Telegram.</p>
-            </div>
-         </div> 
-         <div class="pergunta" onclick="showHide('#resposta4')">
-            <div class="flex">
-               <p>O bot funciona 24h ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
-            </div>
-            <div class="resposta" id="resposta4">
-               <p>Nosso robô funciona todos os dias, 24 horas por dia. São mais de 700 sinais diários.</p>
-            </div>
-         </div> 
-         <div class="pergunta" onclick="showHide('#resposta5')">
-            <div class="flex">
-               <p>Posso parcelar a compra ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
-            </div>
-            <div class="resposta" id="resposta5">
-               <p>Apenas o plano vitalício pode-se parcelar em até 12x.</p>
-            </div>
-         </div> 
-         <div class="pergunta" onclick="showHide('#resposta6')">
-            <div class="flex">
-               <p>Tenho suporte para me auxiliar ?</p>
-               <img src="assets/image/img-faq.png" alt="simbolo de mais(+)">
-            </div>
-            <div class="resposta" id="resposta6">
-               <p>Sim. Contamos com suporte de segunda a sexta. Caso tenha dúvidas entre em contato pelo Instagram ou Telegram.</p>
-            </div>
-         </div> 
       </article>
-      <script src="js/script-scroll.js"></script>
+      
       <script src="js/script-faq.js"></script>
 
       <article class="redes-socias">
@@ -215,7 +218,17 @@
          </ul>
       </article>
    </section>
-   
+   <script src="js/script-scroll.js"></script>
+
+   <!-- Biblioteca JS ANIMATE SCROLL -->
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       duration: 800,
+    });
+  </script>
+
    <p class="direitos">Ⓒ Copyright - EasyMoney</p>
    
 </body>
