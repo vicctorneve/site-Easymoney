@@ -342,6 +342,27 @@ p.direitos{
    margin: 40px;
 }
 /* ANIMAÇÃO */
+
+
+[data-anime]{
+   opacity: 0;
+   transition: .3s;
+}
+[data-anime="left"]{
+   transform: translateX(50px);
+}
+[data-anime="right"]{
+   transform: translateX(-50px);
+}
+[data-anime="up"]{
+   transform: translateY(50px);
+}
+.animate{
+   
+   opacity: 1;
+   transform: translateX(0px);
+   transform: translateY(0px);
+}
 .grow{
    transition: 200ms;
 }
