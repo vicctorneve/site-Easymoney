@@ -159,6 +159,10 @@ header p{
 #feedback9{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
 }
+.background-pln-faq-rs{
+   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
+}
+
 /* CONTAINER PLANOS */
 .container-planos{
    display: flex;
@@ -173,13 +177,12 @@ header p{
 .container-planos-title{
    text-align: center;
    font-size: 2em;
-   margin: 80px;
+   padding: 80px;
 }
 .container-planos-title img{
    width: 200px;
 }
 .container-planos .card_pln{
-   
    display: flex;
    flex-direction: column;
    position: relative;
@@ -188,7 +191,6 @@ header p{
    background-color: rgba(0, 0, 0, 0.479);
    padding: 10px;
    border-radius: 20px;
-   margin: 40px 0px;
    box-shadow:0px 0px 44px -41px red;
 }
 .container-planos .card_pln .card-title{
@@ -208,11 +210,8 @@ header p{
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
-   height: 300px;
-   width: 260px;
+   height: 250px;
    align-self: center;
-}
-.container-planos .card_pln .content ul{
    list-style: url('../assets/image/simbolo-descrição-planos-17px.png');
 }
 .container-planos .card_pln .content .content-valor{
@@ -221,11 +220,8 @@ header p{
    align-items: center;
    justify-content: center;
    height: 100px;
-   width: 250px;
    margin-top: 20px;
-}
-.container-planos .card_pln .content .content-valor .valor{
-   font-size: 1.3em;
+   font-size: 1.3em;   
 }
 .container-planos .card_pln a{
    margin: auto;
@@ -236,15 +232,11 @@ header p{
    border: none;
    padding: 10px;
    width: 250px;
-   transition: all 300ms ease;
    cursor: pointer;
    box-shadow: 0px -2px 15px 14px #ff00004f;
    color: white;
    font-size: 1.2em;
    font-weight: bold;
-}
-.container-planos .card_pln .content .descricao{
-   font-family: Arial, Helvetica, sans-serif;
 }
 .container-planos .card_pln .content p.desc{
    font-size: 20px;
@@ -255,14 +247,18 @@ header p{
    margin: 20px;
 }
 /* Perguntas Frequentes - FAQ */
-article.faq{
+section.container-faq{
+   
+}
+.faq{
    max-width: 1000px;
    margin: auto;
    color: black;
+   
 }
-article.faq h1{
+.faq h1{
+   padding: 40px 0px;
    color: white;
-   margin: 40px 0px;
    text-align: center;
    font-size: 1.5em;
 }
@@ -293,19 +289,26 @@ div.pergunta .ativo{
    padding: 20px 0px;
    transition: 200ms;
 }
+section.container-redes-sociais{
+   width: 100vw;
+   padding: 20px;
+}
 .redes-socias{
-   margin: 40px;
+   max-width: 400px;
+   margin: auto;
 }
 .redes-socias h1{
    text-align: center;
    font-size: 2em;
+   margin: 20px 0px;
 }
 ul.redes-sociais-flex{
    max-width: 400px;
-   margin: 40px auto;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
    gap: 20px;
    list-style: none;
 }
@@ -339,7 +342,6 @@ p.direitos{
 }
 /* ANIMAÇÃO */
 
-
 [data-anime]{
    opacity: 0;
    transition: .3s;
@@ -354,17 +356,18 @@ p.direitos{
    transform: translateY(20px);
 }
 .animate{
-   
    opacity: 1;
    transform: translateX(0px);
    transform: translateY(0px);
 }
-.grow{
-   transition: 200ms;
+/* animação de aumentar quando passar o mouse em cima */
+.grow{ 
+   transition: all 200ms ease;
 }
 .grow:hover{
    -webkit-transform: scale(1.1);
 }
+/* animação de diminuir quando passar o mouse em cima */
 .decrease{
    transition: all 0.3s ease;
 }
