@@ -1,9 +1,4 @@
 @charset "utf-8";
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300&display=swap');
-
-
 *{
    padding: 0px;
    margin: 0px;
@@ -47,6 +42,7 @@ header p{
    display: flex;
    margin: auto;
    width: 350px;
+   height: 120px;
 }
 .container-sobre .title{
    margin: 30px auto;
@@ -409,6 +405,7 @@ p.direitos{
    }
    .container-sobre .container-principal .logo-easymoney{
       width: 200px;
+      height: 80px;
    }
 }
 @media (max-width:300px){
