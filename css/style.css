@@ -176,7 +176,6 @@ section.container-planos{
    justify-content: center;
    color: white;
    padding: 20px;
-   margin: 0px 20px;
    gap: 30px;
    max-width: 1800px;
    align-items: center;
@@ -384,7 +383,7 @@ p.direitos{
 
 /* Medias query */
 
-@media (max-width: 1569px) {
+@media (max-width: 1529px) {
    .cards-planos{
       max-width: 1100px;
    }
