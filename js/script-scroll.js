@@ -2,6 +2,7 @@
 
 const element = document.body;
 
+
 function scrollTo(element) {
    document.querySelector(element).scrollIntoView({behavior: 'smooth'});
 }

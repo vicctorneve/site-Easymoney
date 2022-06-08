@@ -9,6 +9,7 @@
    --cor-vermelho: red;
 }
 body{
+   overflow-x: hidden;
    background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
    color: white;
 }
@@ -164,15 +165,21 @@ header p{
 }
 
 /* CONTAINER PLANOS */
-.container-planos{
+section.container-planos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.cards-planos{
    display: flex;
    flex-wrap: wrap;
-   margin: auto;
    justify-content: center;
-   align-items: center;
    color: white;
    padding: 20px;
+   margin: 0px 20px;
    gap: 30px;
+   max-width: 1800px;
+   align-items: center;
 }
 .container-planos-title{
    text-align: center;
@@ -182,10 +189,9 @@ header p{
 .container-planos-title img{
    width: 200px;
 }
-.container-planos .card_pln{
+.cards-planos .card_pln{
    display: flex;
    flex-direction: column;
-   position: relative;
    width: 350px;
    height: 500px;
    background-color: rgba(0, 0, 0, 0.479);
@@ -193,28 +199,31 @@ header p{
    border-radius: 20px;
    box-shadow:0px 0px 44px -41px red;
 }
-.container-planos .card_pln .card-title{
-   margin: 20px;
+.cards-planos .card_pln .card-title{
+   margin: 20px 0px;
+   text-align: center;
+   width: auto;
+
 }
-.container-planos .card_pln .card-title h2{
+.cards-planos .card_pln .card-title h2{
    color: red;
    font-size: 2em;
    text-align: center;
    border-radius: 20px;
 }
-.container-planos .card_pln .card-title p{
+.cards-planos .card_pln .card-title p{
    text-align: center;
    color: gray;
 }
-.container-planos .card_pln .content{
+.cards-planos .card_pln .content{
    font-size: 1.5em;
    display: flex;
    flex-direction: column;
-   height: 250px;
+   height: auto;
    align-self: center;
    list-style: url('../assets/image/simbolo-descrição-planos-17px.png');
 }
-.container-planos .card_pln .content .content-valor{
+.cards-planos .card_pln .content .content-valor{
    display: flex;
    gap: 10px;
    align-items: center;
@@ -223,10 +232,10 @@ header p{
    margin-top: 20px;
    font-size: 1.3em;   
 }
-.container-planos .card_pln a{
+.cards-planos .card_pln a{
    margin: auto;
 }
-.container-planos .card_pln button{
+.cards-planos .card_pln button{
    border-radius: 10px;
    background-color: red;
    border: none;
@@ -238,10 +247,10 @@ header p{
    font-size: 1.2em;
    font-weight: bold;
 }
-.container-planos .card_pln .content p.desc{
+.cards-planos .card_pln .content p.desc{
    font-size: 20px;
 }
-.container-planos .card_pln .adesao{
+.cards-planos .card_pln .adesao{
    font-size: 1.2em;
    text-align: center;
    margin: 20px;
@@ -254,7 +263,6 @@ section.container-faq{
    max-width: 1000px;
    margin: auto;
    color: black;
-   
 }
 .faq h1{
    padding: 40px 0px;
@@ -341,7 +349,6 @@ p.direitos{
    margin: 40px;
 }
 /* ANIMAÇÃO */
-
 [data-anime]{
    opacity: 0;
    transition: .3s;
@@ -377,6 +384,11 @@ p.direitos{
 
 /* Medias query */
 
+@media (max-width: 1569px) {
+   .cards-planos{
+      max-width: 1100px;
+   }
+}
 @media (max-width:950px){
    .container-sobre p{
       font-size: 1.5em;
