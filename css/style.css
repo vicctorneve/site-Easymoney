@@ -194,7 +194,7 @@ section.container-planos{
    width: 350px;
    height: 500px;
    background-color: rgba(0, 0, 0, 0.479);
-   padding: 10px;
+   padding:  10px;
    border-radius: 20px;
    box-shadow:0px 0px 44px -41px red;
 }
@@ -309,7 +309,7 @@ section.container-redes-sociais{
    font-size: 2em;
    margin: 20px 0px;
 }
-ul.redes-sociais-flex{
+.redes-sociais-flex{
    max-width: 400px;
    margin: auto;
    justify-content: center;
@@ -319,7 +319,7 @@ ul.redes-sociais-flex{
    gap: 20px;
    list-style: none;
 }
-ul.redes-sociais-flex li{
+.redes-sociais-flex li{
    cursor: pointer;
    background-color: white;
    width: 100px;
@@ -328,18 +328,18 @@ ul.redes-sociais-flex li{
    border: 3px solid white;
    transition: all 200ms ease;
 }
-ul.redes-sociais-flex li:hover{
+.redes-sociais-flex li:hover{
    border: 5px solid blue;
 }
-ul.redes-sociais-flex li.instagram{
+.redes-sociais-flex li.instagram{
    background: white url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
    background-size: cover;
 }
-ul.redes-sociais-flex li.telegram{
+.redes-sociais-flex li.telegram{
    background: white url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
    background-size: cover;
 }
-ul.redes-sociais-flex li.youtube{
+.redes-sociais-flex li.youtube{
    background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
 }
@@ -410,6 +410,7 @@ p.direitos{
       height: 50px;
    }
 }
+
 @media (max-width:430px){
    .container-sobre img{
       width: 300px;
@@ -420,6 +421,17 @@ p.direitos{
    .container-sobre .container-principal .logo-easymoney{
       width: 200px;
       height: 80px;
+   }
+}
+@media (max-width: 400px){
+   .cards-planos .card_pln{
+      width: 300px;
+   }
+   .cards-planos .card_pln .content{
+      font-size: 1.2em;
+   }
+   .cards-planos .card_pln button{
+      width: 200px;
    }
 }
 @media (max-width:300px){
