@@ -17,9 +17,19 @@
 </head>
 <body>
    <header>
-      <p><strong>CUPOM COM 50% DE DESCONTO PARA OS 10 PRIMEIROS: EASY50</strong></p>
+      <p>CUPOM COM <span class="p-black">50% DE DESCONTO</span> 10 PRIMEIROS: <span class="p-black">EASY50</span></p>
    </header>
-   <section class="container-sobre"> <!--SOBRE-->
+   <nav class="menu">
+      <span class="logo-blaze"><img src="assets/image/logo-blaze-50px.png" alt=""> </span>
+      <ul>
+         <li><a href="#sobre">Sobre</a></li>
+         <li><a href="#feedback">Feedbacks</a></li>
+         <li><a href="#planos">planos</a></li>
+         <li><a href="#faq">Faq</a></li>
+      </ul>
+   </nav>
+   <script src="js/scroll-menu"></script>
+   <section class="container-sobre" id="sobre"> <!--SOBRE-->
       <article class="container-principal">
          <img class="logo-easymoney decrease" src="assets/image/logo-EasyMoney.png" alt="logo da empresa EasyMoney">
          <div class="title">
@@ -36,7 +46,7 @@
       
    </section>
    <!--FEEDBACKS-->
-   <section class="container-depoimentos" id="depoimentos" > 
+   <section class="container-depoimentos" id="feedback" > 
       <h1>Vejam alguns depoimentos dos nossos clientes</h1>
       <ul class="depoimentos-flex" data-anime>
          <li class="depoimento grow" id="feedback1"></li>
@@ -149,7 +159,7 @@
       </article>
    </section>
    <!--Duvidas-->
-   <section class="container-faq">
+   <section class="container-faq" id="faq">
       <article class="faq" id="faq">
          <h1>Perguntas Frequentes - FAQ</h1>
          <div class="" data-anime="right">
@@ -211,7 +221,7 @@
       <script src="js/script-faq.js"></script>
    </section>
    <!--Redes Sociais-->
-   <section class="container-redes-sociais">
+   <section class="container-redes-sociais" id="redes-sociais">
       <article class="redes-socias" >
          <h1>Redes Sociais</h1>
          <ul class="redes-sociais-flex" data-anime="up">
