@@ -12,7 +12,8 @@
    --color-white: white;
 }
 a{
-   color: inherit;
+   color: white;
+   text-decoration: none;
 }
 body{
    overflow-x: hidden;
@@ -32,33 +33,36 @@ div.promotion p{
    text-transform: uppercase;
    font-size: 1.5em;
 }
-aside{
-   font-size: 1.5em;
-   padding: 10px;
+.logo{
+   font-size: 24px;
 }
-.menu-container{
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   gap: 20px;
-   max-width: 1200px;
-   margin: auto;
-   padding: 10px 0px;
-}
-nav ul{
-   list-style: none;
-   display: flex;
-}
-aside ul li{
+nav{
    text-transform: uppercase;
-   position: relative;
-   margin: 0 30px;
-   transition: all 200ms ease-in-out;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: black;
+   height: 8vh;
 }
-aside ul li:hover{
-   color: red;
-   text-decoration: underline;
+.nav-list {
+   display: flex;
+   list-style: none;
 }
+.nav-list li {
+   margin-left: 32px;
+}
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+.mobile-menu div{
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
 /* CONTAINER-SOBRE */
 .container-sobre{
    flex-direction: column;
@@ -436,9 +440,6 @@ p.direitos{
    }
 }
 @media (max-width:530px){
-   nav{
-      display: none;
-   }
    header p{
       font-size: 1em;
    }
