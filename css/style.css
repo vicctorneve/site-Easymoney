@@ -14,8 +14,10 @@ a{
 }
 body{
    overflow-x: hidden;
-   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), #000000);
    color: #ffffff;
+}
+main{
+   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), #000000);
 }
 /* DESCONTO */
 div.promotion{
@@ -36,7 +38,7 @@ header{
    color: #ffffff;
 }
 .menu-content .logo{
-   width: 50px;
+   width: 40px;
 }
 .menu-content{
    text-transform: uppercase;
@@ -74,7 +76,7 @@ nav ul li a:hover{
    margin: 8px;
 }
 /* Menu Mobile */
-@media (max-width:800px){
+@media (max-width:680px){
    .btn-menu{
       display: block;
    }
@@ -84,7 +86,7 @@ nav ul li a:hover{
       width: 100vw;
       height: 0vh;
       position: absolute;
-      top: 132px;
+      top: 145px;
       background-color: #000000;
    }
    .menu, .menu ul{
@@ -94,7 +96,8 @@ nav ul li a:hover{
    }
    #checkbox-menu:checked~.menu{
       display: flex;
-      height: 30vh;
+      height: 35vh;
+      z-index: 1000;
    }
    #checkbox-menu:checked + .btn-menu div.line1{
       transform: rotate(-45deg) translate(-6px);
@@ -107,22 +110,23 @@ nav ul li a:hover{
       transform: rotate(45deg) translate(-5px, -1px);
    }
 }
-@media (max-width: 680px){
-   .menu{
-      top: 160px;
-   }
-}
 @media (max-width:388px){
    div.promotion p{
       font-size: 1em;
    }
 }
+section{
+   min-height: 100vh;
+}
 /* CONTAINER-SOBRE */
 .container-sobre{
    flex-direction: column;
    display: flex;
+   justify-content: center;
+   align-items: center;
    color: black;
-   padding: 40px 0px;
+   padding: 80px 0px;
+   min-height: 100vh;
    height: auto;
    background: gray url(../assets/image/background-sobre.jpg) center center no-repeat fixed;
    background-size: cover;
@@ -131,11 +135,9 @@ nav ul li a:hover{
    width: 90VW;
    margin: auto;
 }
-.container-sobre .container-principal .logo-easymoney{
+.logo-easymoney{
    display: flex;
-   margin: auto;
-   width: 300px;
-   height: 100px;
+   margin: 30px auto;
 }
 .container-sobre .title{
    margin: 30px auto;
@@ -151,7 +153,7 @@ span.p-red{
    color: red;
 }
 .container-sobre .container-video{
-   max-width: 1000px;
+   max-width: 900px;
    margin: auto;
 }
 .container-sobre .embed{
@@ -347,7 +349,9 @@ section.container-planos{
 }
 /* Perguntas Frequentes - FAQ */
 section.container-faq{
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .faq{
    max-width: 1000px;
@@ -358,7 +362,7 @@ section.container-faq{
    padding: 40px 0px;
    color: white;
    text-align: center;
-   font-size: 1.5em;
+   font-size: 2em;
 }
 .pergunta{
    font-family: 'Montserrat', sans-serif;
@@ -367,6 +371,7 @@ section.container-faq{
    cursor: pointer;
    margin: 10px 0px;
    box-shadow: rgb(157 152 152) 0px 4px 1px;
+   font-size: 1.5em;
 }
 .pergunta .flex{
    display: flex;
@@ -390,7 +395,7 @@ div.pergunta .ativo{
 section.container-redes-sociais{
    width: 100vw;
    padding: 20px;
-   margin: 50px 0;
+   margin: 70px 0;
 }
 .redes-socias{
    max-width: 400px;
@@ -437,7 +442,7 @@ section.container-redes-sociais{
 }
 p.direitos{
    text-align: center;
-   margin: 40px;
+   padding: 80px;
 }
 /* ANIMAÇÃO */
 [data-anime]{
