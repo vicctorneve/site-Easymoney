@@ -1,10 +1,11 @@
 .container-img{
    display: flex;
+   flex-wrap: wrap;
    background-color: rgb(47, 3, 88);
 }
 
 .img-readme{
-   width: 400px;
+   width: 200px;
    margin: 40px 0;
 }
 .title-readme{
