@@ -1,28 +1,36 @@
 @charset "utf-8";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&family=Montserrat&display=swap');
+:root {
+   --font-paragrafo: 'Montserrat', sans-serif;
+   --font-title: 'Anek Latin', sans-serif;
+   --color-primary: #ff0000;
+   --color-secundary: ;
+}
 *{
    padding: 0px;
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
 }
-
+h1, h2, h3,h4,h5,h6{
+   font-family: var(--font-title);
+}
 a{
    color: #ffffff;
    text-decoration: none;
 }
 body{
+   font-family: var(--font-paragrafo);
    overflow-x: hidden;
    color: #ffffff;
 }
 main{
-   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), #000000);
+   background: linear-gradient(250deg , #000000d7, #000000);
 }
 /* DESCONTO */
 div.promotion{
    position: relative;
-   background: linear-gradient(to right, red, rgb(148, 7, 7));
+   background: linear-gradient(to right, #ff0000, #940707);
    color: #ffffff;
    text-align: center;
    padding: 10px 0px;
@@ -59,7 +67,7 @@ nav ul li{
    transition: all 300ms ease-in-out;
 }
 nav ul li a:hover{
-   color: red;
+   color: #ff0000;
    text-decoration: underline;
 }
 #checkbox-menu{
@@ -96,7 +104,7 @@ nav ul li a:hover{
    }
    #checkbox-menu:checked~.menu{
       display: flex;
-      height: 35vh;
+      height: 60vh;
       z-index: 1000;
    }
    #checkbox-menu:checked + .btn-menu div.line1{
@@ -124,11 +132,11 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
-   color: black;
-   padding: 80px 0px;
+   color: #000000;
+   padding: 100px 0px;
    min-height: 100vh;
    height: auto;
-   background: gray url(../assets/image/background-sobre.jpg) center center no-repeat fixed;
+   background: #808080 url(../assets/image/background-sobre.jpg) center center no-repeat fixed;
    background-size: cover;
 }
 .container-sobre .container-principal{
@@ -142,22 +150,22 @@ section{
 .container-sobre .title{
    margin: 30px auto;
 }
-.container-sobre .title p{
-   color: white;
+.container-sobre .title h1{
+   color: #ffffff;
    text-align: center;
    font-size: 2em;
    font-weight: bold;
    text-shadow: -8px -4px 9px #ff00008c;
 }
 span.p-red{
-   color: red;
+   color: #ff0000;
 }
 .container-sobre .container-video{
    max-width: 900px;
    margin: auto;
 }
 .container-sobre .embed{
-   background-color: black;
+   background-color: #000000;
    position: relative;
    margin: auto;
    width: 100%;
@@ -165,7 +173,7 @@ span.p-red{
 }
 .container-sobre .embed iframe{
    border-radius: 10px;
-   box-shadow: -2px -2px 6px 4px rgba(255, 0, 0, 0.616);
+   box-shadow: -2px -2px 6px 4px #ff00009d;
    position: absolute;
    width: 100%;
    height: 100%;
@@ -181,11 +189,11 @@ span.p-red{
 .container-sobre button{
    text-transform: uppercase;
    font-weight: bold;
-   color: white;
+   color: #ffffff;
    padding: 20px;
    font-size: 1.5em;
    align-self: center;
-   background-color: red;
+   background-color: #ff0000;
    border-radius: 10px;
    transition: all 300ms ease;
    box-shadow: 0px -2px 15px 14px #ff00004f;
@@ -194,11 +202,11 @@ span.p-red{
 }
 /* CONTAINER FEEDBACK */
 .container-depoimentos{
-   background-color: white;
+   background-color: #ffffff;
    height: auto;
    list-style: none;
 }
-.container-depoimentos h1{
+.container-depoimentos h2{
    text-align: center;
    color: black;
    padding: 40px;
@@ -218,8 +226,8 @@ span.p-red{
    width: 250px;
    height: 400px;
    margin: 20px;
-   box-shadow: -1px 3px 11px 3px rgba(0, 0, 0, 0.473);
-   background-color: black;
+   box-shadow: -1px 3px 11px 3px #00000079;
+   background-color: #000000;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -254,7 +262,7 @@ span.p-red{
    background-image: url(../assets/image/feedbacks/feedback-easymoney-9.jpeg);
 }
 .background-pln-faq-rs{
-   background: linear-gradient(250deg , rgba(0, 0, 0, 0.842), black);
+   background: linear-gradient(250deg , #000000d7, #000000);
 }
 
 /* CONTAINER PLANOS */
@@ -267,7 +275,7 @@ section.container-planos{
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   color: white;
+   color: #ffffff;
    padding: 20px;
    gap: 30px;
    max-width: 1800px;
@@ -282,14 +290,17 @@ section.container-planos{
    width: 200px;
 }
 .cards-planos .card_pln{
+   font-size: 1em;
+   text-transform: uppercase;
+   font-weight: bold;
    display: flex;
    flex-direction: column;
-   width: 350px;
-   height: 500px;
-   background-color: rgba(0, 0, 0, 0.479);
+   min-width: 350px;
+   min-height: 500px;
+   background-color: #0000007a;
    padding:  10px;
    border-radius: 20px;
-   box-shadow:0px 0px 44px -41px red;
+   box-shadow:0px 0px 44px -41px #ff0000;
 }
 .cards-planos .card_pln .card-title{
    margin: 20px 0px;
@@ -298,17 +309,18 @@ section.container-planos{
 
 }
 .cards-planos .card_pln .card-title h2{
-   color: red;
+   color: #ff0000;
    font-size: 2em;
    text-align: center;
    border-radius: 20px;
 }
 .cards-planos .card_pln .card-title p{
    text-align: center;
-   color: gray;
+   color: #808080;
 }
 .cards-planos .card_pln .content{
-   font-size: 1.5em;
+   font-size: 1em;
+   line-height: 30px;
    display: flex;
    flex-direction: column;
    height: auto;
@@ -329,13 +341,13 @@ section.container-planos{
 }
 .cards-planos .card_pln button{
    border-radius: 10px;
-   background-color: red;
+   background-color: #ff0000;
    border: none;
    padding: 10px;
    width: 250px;
    cursor: pointer;
    box-shadow: 0px -2px 15px 14px #ff00004f;
-   color: white;
+   color: #ffffff;
    font-size: 1.2em;
    font-weight: bold;
 }
@@ -356,21 +368,21 @@ section.container-faq{
 .faq{
    max-width: 1000px;
    margin: 30px auto;
-   color: black;
+   color: #000000;
 }
 .faq h1{
    padding: 40px 0px;
-   color: white;
+   color: #ffffff;
    text-align: center;
    font-size: 2em;
 }
 .pergunta{
    font-family: 'Montserrat', sans-serif;
    padding: 10px;
-   background-color: white;
+   background-color: #ffffff;
    cursor: pointer;
    margin: 10px 0px;
-   box-shadow: rgb(157 152 152) 0px 4px 1px;
+   box-shadow: #9d9898 0px 4px 1px;
    font-size: 1.5em;
 }
 .pergunta .flex{
@@ -418,26 +430,26 @@ section.container-redes-sociais{
 }
 .redes-sociais-flex li{
    cursor: pointer;
-   background-color: white;
+   background-color: #ffffff;
    width: 100px;
    height: 100px;
    border-radius: 100%;
-   border: 3px solid white;
+   border: 3px solid #ffffff;
    transition: all 200ms ease;
 }
 .redes-sociais-flex li:hover{
-   border: 5px solid blue;
+   border: 5px solid #0000ff;
 }
 .redes-sociais-flex li.instagram{
-   background: white url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
+   background: #ffffff url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
    background-size: cover;
 }
 .redes-sociais-flex li.telegram{
-   background: white url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
+   background: #ffffff url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
    background-size: cover;
 }
 .redes-sociais-flex li.youtube{
-   background: white url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
+   background: #ffffff url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
 }
 p.direitos{
