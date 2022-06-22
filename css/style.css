@@ -104,7 +104,7 @@ nav ul li a:hover{
    }
    #checkbox-menu:checked~.menu{
       display: flex;
-      height: 60vh;
+      height: 45vh;
       z-index: 1000;
    }
    #checkbox-menu:checked + .btn-menu div.line1{
@@ -295,8 +295,8 @@ section.container-planos{
    font-weight: bold;
    display: flex;
    flex-direction: column;
-   min-width: 350px;
-   min-height: 500px;
+   width: 350px;
+   height: 500px;
    background-color: #0000007a;
    padding:  10px;
    border-radius: 20px;
@@ -539,10 +539,7 @@ p.direitos{
 }
 @media (max-width: 400px){
    .cards-planos .card_pln{
-      width: 300px;
-   }
-   .cards-planos .card_pln .content{
-      font-size: 1.2em;
+      font-size: 0.9em;
    }
    .cards-planos .card_pln button{
       width: 200px;
