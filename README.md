@@ -1,11 +1,7 @@
 <h1 class='title-readme'>Easymoney</h1>
 <p>Site para venda de grupo de sinais da Blaze</p>
-
-<div class='container-img'>
 <img class="img-readme" src="assets/image/readme/site-readme.png" alt="Foto do site">
-<img class="img-readme" src="assets/image/readme/site-readme.png" alt="Foto do site">
-</div>
-
+<p><a href="https://vicctorneve.github.io/site-Easymoney/">clique aqui</a> para acessar o site</p>
 <hr>
 <h2 class='title-readme'>Tecnologias e Ferramentas</h2>
 <ul>

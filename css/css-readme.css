@@ -1,13 +1,3 @@
-.container-img{
-   display: flex;
-   flex-wrap: wrap;
-   background-color: rgb(47, 3, 88);
-}
-
 .img-readme{
-   width: 200px;
    margin: 40px 0;
-}
-.title-readme{
-   color: red;
 }
