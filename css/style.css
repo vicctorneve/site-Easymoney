@@ -287,6 +287,7 @@ span.p-red{
 /* CONTAINER PLANOS */
 section.container-planos {
    overflow-x: hidden;
+   padding: 20px 0;
    width: 100vw;
    min-height: 100vh;
    background-color: #000000;
@@ -308,6 +309,9 @@ section.container-planos img{
 .container .title h1{
    text-align: center;
 }
+.container-planos .subtitle{
+   color: gray;
+}
 .container-cards-planos{
    flex-wrap: wrap;
    margin: 10px 0;
@@ -318,7 +322,6 @@ section.container-planos img{
 @media (max-width:1455px) {
    .container-cards-planos {
       max-width: 1000px;
-      background-color: red;
    }
 }
 .card-planos{
@@ -370,11 +373,12 @@ section.container-faq{
    align-items: center;
    background-color: white;
    color: black;
+   padding: 20px;
 }
 .faq{
    max-width: 1000px;
    padding: 20px;
-   margin: 20px auto;
+   margin: 0px auto;
    color: #000000;
 }
 .faq h1{
@@ -417,7 +421,7 @@ footer.container-redes-sociais{
    flex-direction: column;
    width: 100vw;
    padding: 20px;
-   background-color: rgb(48, 47, 47);
+   background-color: #000000;
 }
 .redes-socias{
    max-width: 400px;
