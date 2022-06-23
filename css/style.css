@@ -95,7 +95,7 @@ nav ul li a:hover{
       width: 100vw;
       height: 0vh;
       position: absolute;
-      top: 145px;
+      top: 170px;
       background-color: #000000;
    }
    .menu, .menu ul{
@@ -123,6 +123,14 @@ nav ul li a:hover{
    div.promotion p{
       font-size: 1em;
    }
+   .menu {
+      top: 150px;
+   }
+}
+@media (max-width:291px) {
+   .menu {
+      top: 160px;
+   }
 }
 section{
    min-height: 100vh;
@@ -144,10 +152,6 @@ section{
    width: 90VW;
    margin: auto;
 }
-.logo-easymoney{
-   display: flex;
-   margin: 30px auto;
-}
 .container-sobre .title{
    margin: 30px auto;
 }
@@ -157,6 +161,11 @@ section{
    font-size: 2em;
    font-weight: bold;
    text-shadow: -8px -4px 9px #ff00008c;
+}
+@media (max-width: 361px){
+   .container-sobre .title h1{
+      font-size: 1em;
+   }
 }
 span.p-red{
    color: #ff0000;
@@ -184,16 +193,20 @@ span.p-red{
    margin: auto;
 }
 .container-sobre img{
-   width: 600px;
+   width: 60%;
    margin: 30px auto;
 }
 .container-sobre button{
+   display: flex;
    text-transform: uppercase;
    font-weight: bold;
    color: #ffffff;
    padding: 20px;
    font-size: 1.5em;
-   align-self: center;
+   width: 80%;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
    background-color: #ff0000;
    border-radius: 10px;
    transition: all 300ms ease;
@@ -214,6 +227,11 @@ span.p-red{
    font-weight: bold;
    font-size: 2em;
    text-transform: uppercase;
+}
+@media (max-width: 295px) {
+   .container-depoimentos h2 {
+      font-size: 1em;
+   }
 }
 .container-depoimentos .depoimentos-flex{
    max-width: 1500px;
@@ -268,9 +286,10 @@ span.p-red{
 
 /* CONTAINER PLANOS */
 section.container-planos {
+   overflow-x: hidden;
    width: 100vw;
    min-height: 100vh;
-   background-color: black;
+   background-color: #000000;
    color: white;
    display: flex;
    flex-direction: column;
@@ -279,30 +298,34 @@ section.container-planos {
    margin: 0 auto;
 }
 section.container-planos img{
-   width: 80%;
+   width: 60%;
 }
 .container-planos .title{
    margin: 30px auto;
-   font-size: 3em;
+   font-size: 2em;
    text-align: center;
 }
 .container .title h1{
    text-align: center;
 }
 .container-cards-planos{
-   background-color: blue;
    flex-wrap: wrap;
    margin: 10px 0;
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
+@media (max-width:1455px) {
+   .container-cards-planos {
+      max-width: 1000px;
+      background-color: red;
+   }
+}
 .card-planos{
    margin: 10px 10px;
    padding: 50px 10px;
    background-color: rgb(12, 11, 11);
-   font-size: 1.3em;
+   font-size: 1em;
    text-transform: uppercase;
    border-radius: 10px;
 }
@@ -319,13 +342,14 @@ ul.descricao{
 p.valor{
    font-size: 1.5em;
 }
-button{
+.card-planos button{
    cursor: pointer;
    border: none;
    display: flex;
    justify-content: center;
    text-align: center;
    background-color: red;
+   width: 60%;
    color: white;
    font-size: 1.3em;
    text-transform: uppercase;
@@ -339,18 +363,22 @@ p.adesao{
 }
 /* Perguntas Frequentes - FAQ */
 section.container-faq{
+   position: relative;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-color: white;
+   color: black;
 }
 .faq{
    max-width: 1000px;
-   margin: 30px auto;
+   padding: 20px;
+   margin: 20px auto;
    color: #000000;
 }
 .faq h1{
    padding: 40px 0px;
-   color: #ffffff;
    text-align: center;
    font-size: 2em;
 }
@@ -382,10 +410,14 @@ div.pergunta .ativo{
    padding: 20px 0px;
    transition: 200ms;
 }
-section.container-redes-sociais{
+footer.container-redes-sociais{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    width: 100vw;
    padding: 20px;
-   margin: 70px 0;
+   background-color: rgb(48, 47, 47);
 }
 .redes-socias{
    max-width: 400px;
@@ -475,56 +507,10 @@ p.direitos{
       max-width: 1100px;
    }
 }
-@media (max-width:950px){
-   .container-sobre p{
-      font-size: 1.5em;
-   }
-}
-@media (max-width:750px){
-   .container-sobre .title p{
-      font-size: 1.5em;
-   }
-   .container-sobre img{
-      width: 450px;
-   }
-}
-@media (max-width:530px){
-   header p{
-      font-size: 1em;
-   }
-}
 @media (max-width:500px){
-   .container-sobre img{
-      width: 350px;
-   }
    ul.redes-sociais li{
       width: 50px;
       height: 50px;
    }
 }
 
-@media (max-width:430px){
-   .container-sobre img{
-      width: 300px;
-   }
-   .container-sobre button{
-      font-size: 1em;
-   }
-   .container-sobre .container-principal .logo-easymoney{
-      width: 200px;
-      height: 80px;
-   }
-}
-@media (max-width: 400px){
-   .cards-planos .card_pln{
-      font-size: 0.9em;
-   }
-   .cards-planos .card_pln button{
-      width: 200px;
-   }
-}
-@media (max-width:300px){
-   .container-sobre img{
-      width: 250px;
-   }
-}
