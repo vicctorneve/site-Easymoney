@@ -149,8 +149,7 @@ section{
    background-size: cover;
 }
 .container-sobre .container-principal{
-   width: 90VW;
-   margin: auto;
+   padding: 0px 20px;
 }
 .container-sobre .title{
    margin: 30px auto;
@@ -433,37 +432,37 @@ footer.container-redes-sociais{
 }
 .redes-sociais-flex{
    min-height: 200px;
-   padding: 20px;
    margin: auto;
    justify-content: center;
    align-items: center;
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
-   list-style: none;
 }
-.redes-sociais-flex a{
+.redes-sociais-flex div{
    cursor: pointer;
    background-color: #ffffff;
    width: 100px;
    height: 100px;
    border-radius: 100%;
-   border: 3px solid #ffffff;
    transition: all 200ms ease;
 }
-.redes-sociais-flex a:hover{
+.redes-sociais-flex div.instagram, div.telegram {
+   border: 5px solid white;
+}
+.redes-sociais-flex div:hover{
    border: 5px solid #0000ff;
 }
-.redes-sociais-flex a.instagram{
+.redes-sociais-flex .instagram{
    background: #ffffff url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
    background-size: cover;
 }
-.redes-sociais-flex a.telegram{
+.redes-sociais-flex .telegram{
    background: #ffffff url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
    background-size: cover;
 }
-.redes-sociais-flex a.youtube{
-   background: #ffffff url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
+.redes-sociais-flex .youtube{
+   background: #ffffff url(../assets/image/redes-sociais/youtube.png) center center no-repeat ;
    background-size: cover;
 }
 p.direitos{
