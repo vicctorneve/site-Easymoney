@@ -412,62 +412,49 @@ div.pergunta .ativo{
    padding: 20px 0px;
    transition: 200ms;
 }
-footer.container-redes-sociais{
+/* FOOTER */
+footer{
    display: flex;
-   justify-content: center;
-   align-items: center;
    flex-direction: column;
-   width: 100vw;
-   padding: 20px;
-   background-color: #000000;
-}
-.redes-socias{
-   max-width: 400px;
-   margin: 0px auto;
-}
-.redes-socias h1{
-   text-align: center;
-   font-size: 2em;
-   margin: 20px 0px;
-}
-.redes-sociais-flex{
-   min-height: 200px;
-   margin: auto;
-   justify-content: center;
    align-items: center;
+   padding: 20px;
+}
+.container-redes-sociais{
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.container-redes-sociais .flex{
+   margin: 30px;
    display: flex;
    flex-wrap: wrap;
+   align-items: center;
    gap: 20px;
 }
-.redes-sociais-flex div{
-   cursor: pointer;
-   background-color: #ffffff;
+.flex .rede-social {
+   background-color: white;
    width: 100px;
    height: 100px;
    border-radius: 100%;
-   transition: all 200ms ease;
 }
-.redes-sociais-flex div.instagram, div.telegram {
+.flex .instagram{
+   background-image: url(../assets/image/redes-sociais/instagram.png);
+   background-size: cover;
+}
+.flex .telegram {
+   background-image: url(../assets/image/redes-sociais/telegram.png);
+   background-size: cover;
+}
+.flex .youtube {
+   background-image: url(../assets/image/redes-sociais/youtube.png);
+   background-size: cover;
+}
+.flex .instagram, .flex .telegram {
    border: 5px solid white;
 }
-.redes-sociais-flex div:hover{
-   border: 5px solid #0000ff;
-}
-.redes-sociais-flex .instagram{
-   background: #ffffff url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
-   background-size: cover;
-}
-.redes-sociais-flex .telegram{
-   background: #ffffff url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
-   background-size: cover;
-}
-.redes-sociais-flex .youtube{
-   background: #ffffff url(../assets/image/redes-sociais/youtube.png) center center no-repeat ;
-   background-size: cover;
-}
-p.direitos{
-   text-align: center;
-   padding: 20px;
+.rede-social:hover{
+   border: 5px solid blue;
 }
 /* ANIMAÇÃO */
 [data-anime]{
