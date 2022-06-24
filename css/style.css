@@ -432,7 +432,8 @@ footer.container-redes-sociais{
    margin: 20px 0px;
 }
 .redes-sociais-flex{
-   max-width: 400px;
+   min-height: 200px;
+   padding: 20px;
    margin: auto;
    justify-content: center;
    align-items: center;
@@ -467,7 +468,7 @@ footer.container-redes-sociais{
 }
 p.direitos{
    text-align: center;
-   padding: 80px;
+   padding: 20px;
 }
 /* ANIMAÇÃO */
 [data-anime]{
