@@ -287,7 +287,6 @@ span.p-red{
 /* CONTAINER PLANOS */
 section.container-planos {
    overflow-x: hidden;
-   padding: 20px 0;
    width: 100vw;
    min-height: 100vh;
    background-color: #000000;
@@ -326,7 +325,7 @@ section.container-planos img{
 }
 .card-planos{
    margin: 10px 10px;
-   padding: 50px 10px;
+   padding: 30px 10px;
    background-color: rgb(12, 11, 11);
    font-size: 1em;
    text-transform: uppercase;
@@ -442,7 +441,7 @@ footer.container-redes-sociais{
    gap: 20px;
    list-style: none;
 }
-.redes-sociais-flex li{
+.redes-sociais-flex a{
    cursor: pointer;
    background-color: #ffffff;
    width: 100px;
@@ -451,18 +450,18 @@ footer.container-redes-sociais{
    border: 3px solid #ffffff;
    transition: all 200ms ease;
 }
-.redes-sociais-flex li:hover{
+.redes-sociais-flex a:hover{
    border: 5px solid #0000ff;
 }
-.redes-sociais-flex li.instagram{
+.redes-sociais-flex a.instagram{
    background: #ffffff url(../assets/image/redes-sociais/instagram.png) center center no-repeat scroll;
    background-size: cover;
 }
-.redes-sociais-flex li.telegram{
+.redes-sociais-flex a.telegram{
    background: #ffffff url(../assets/image/redes-sociais/telegram.png) center center no-repeat scroll;
    background-size: cover;
 }
-.redes-sociais-flex li.youtube{
+.redes-sociais-flex a.youtube{
    background: #ffffff url(../assets/image/redes-sociais/youtube.png) center center no-repeat scroll;
    background-size: cover;
 }
