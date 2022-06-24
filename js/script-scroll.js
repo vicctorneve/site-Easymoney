@@ -5,7 +5,6 @@ function scrollTo(element) {
 }
 document.querySelector("#btntoplanos").addEventListener('click', function(event){
    event.preventDefault();
-   console.log('clicado')
    scrollTo("#planos");
 })
 

@@ -94,6 +94,7 @@ nav ul li a:hover{
       left: 0;
       width: 100vw;
       height: 0vh;
+      transition: all 1s ease-in-out;
       position: absolute;
       top: 170px;
       background-color: #000000;
@@ -364,7 +365,6 @@ p.adesao{
 }
 /* Perguntas Frequentes - FAQ */
 section.container-faq{
-   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -374,7 +374,6 @@ section.container-faq{
    padding: 20px;
 }
 .faq{
-   max-width: 1000px;
    padding: 20px;
    margin: 0px auto;
    color: #000000;
@@ -430,6 +429,7 @@ footer{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
+   justify-content: center;
    gap: 20px;
 }
 .flex .rede-social {
@@ -460,6 +460,8 @@ footer{
 [data-anime]{
    opacity: 0;
    transition: .3s;
+   transition: all 500ms ease-in-out;
+
 }
 [data-anime="left"]{
    transform: translateX(20px);
