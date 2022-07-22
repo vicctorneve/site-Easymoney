@@ -23,14 +23,13 @@
    <header>
       <div class="menu-content">
          <img class="logo" src="assets/image/favicon.png" alt="imagem da logo da easymoney">
-         <input type="checkbox" id="checkbox-menu" role="button" aria-label="Abrir Menu" aria-expanded="false">
-         <label for="checkbox-menu" class="btn-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-         </label>
-         <nav class="menu">
-            <ul onclick="getElementById('checkbox-menu').checked = false;">
+         <nav id="nav">
+            <div class="btn-menu">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+            <ul class="menu" onclick="getElementById('checkbox-menu').checked = false;">
                <li><a href="#sobre">Easymoney</a></li>
                <li><a href="#feedback">Feedbacks</a></li>
                <li><a href="#planos">Planos</a></li>
@@ -39,6 +38,7 @@
          </nav>
       </div>
    </header>
+   <script src="js/script-menu-mobile.js"></script>
    <script src="js/scroll-menu.js"></script>
    <main>
    <section class="container-sobre" id="sobre"> <!--SOBRE-->
@@ -52,7 +52,7 @@
             </div>
          </div>
       </article>
-      <img src="assets/image/img1.png" alt="imagem garantia">
+      <img class="img-garantia" src="assets/image/img1.png" alt="imagem mostra a garantia que a privacidade é protegida, satisfação garantida e o checkout seguro">
       <a href="#" id="btntoplanos"><button class="decrease">Quero receber sinais</button></a>
       
    </section>

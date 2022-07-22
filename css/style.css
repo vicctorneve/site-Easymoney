@@ -19,7 +19,12 @@ a{
    color: #ffffff;
    text-decoration: none;
 }
+section{
+   min-height: 100vh;
+}
 body{
+   width: 100vw;
+   height: 100vh;
    font-family: var(--font-paragrafo);
    overflow-x: hidden;
    color: #ffffff;
@@ -50,29 +55,27 @@ header{
    width: 40px;
 }
 .menu-content{
+   height: 70px;
    text-transform: uppercase;
-   padding: 10px;
+   padding: 15px;
    max-width: 1200px;
    margin: auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
-nav ul{
+.menu{
    list-style: none;
    display: flex;
    gap: 30px;
 }
-nav ul li{
-   cursor: pointer;
-   transition: all 300ms ease-in-out;
+.menu li {
+   transition: all 200ms ease-in-out;
+   padding: 10px;
 }
-nav ul li a:hover{
-   color: #ff0000;
-   text-decoration: underline;
-}
-#checkbox-menu{
-   display: none;
+.menu li:hover{
+   background-color: rgb(54, 54, 54);
+
 }
 .btn-menu{
    display: none;
@@ -84,56 +87,44 @@ nav ul li a:hover{
    background-color: #ffffff;
    margin: 8px;
 }
-/* Menu Mobile */
-@media (max-width:680px){
+@media (max-width: 800px){
    .btn-menu{
       display: block;
    }
    .menu{
-      display: none;
-      left: 0;
-      width: 100vw;
-      height: 0vh;
+      transition: .6s;
+      display: block;
+      padding: 10px;
+      visibility: hidden;
+      overflow-y: hidden;
       position: absolute;
-      top: 170px;
-      background-color: #000000;
-   }
-   .menu, .menu ul{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-   }
-   #checkbox-menu:checked~.menu{
-      display: flex;
-      height: 30vh;
+      width: 100%;
+      height: 0;
+      top: calc(70px + 60px);
+      background-color: black;
+      left: 0;
       z-index: 1000;
    }
-   #checkbox-menu:checked + .btn-menu div.line1{
-      transform: rotate(-45deg) translate(-6px);
+   nav.active .menu{
+      height: 50vh;
+      visibility: visible;
+      overflow-y: auto;
    }
-   #checkbox-menu:checked + .btn-menu div.line2{
-      position: absolute;
-      opacity: 0;
-   }
-   #checkbox-menu:checked + .btn-menu div.line3{
-      transform: rotate(45deg) translate(-5px, -1px);
+}
+@media (max-width:708px){
+   .menu{
+      top: calc(70px + 98px);
    }
 }
 @media (max-width:427px){
-   div.promotion p{
-      font-size: 1em;
-   }
-   .menu {
-      top: 150px;
+   .menu{
+      top: calc(70px + 127px);
    }
 }
-@media (max-width:291px) {
-   .menu {
-      top: 160px;
+@media (max-width:263px){
+   .menu{
+      top: calc(70px + 156px);
    }
-}
-section{
-   min-height: 100vh;
 }
 /* CONTAINER-SOBRE */
 .container-sobre{
@@ -191,8 +182,8 @@ span.p-red{
 .container-sobre a{
    margin: auto;
 }
-.container-sobre img{
-   width: 60%;
+.container-sobre .img-garantia{
+   width: 40%;
    margin: 30px auto;
 }
 .container-sobre button{
