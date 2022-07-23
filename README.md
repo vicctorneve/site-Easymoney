@@ -1,8 +1,14 @@
 # Easymoney
 
-<p>Site para venda de grupo de sinais da Blaze</p>
+<p>Site para venda de grupo de sinais da Blaze desenvolvido para um cliente sem remuneração</p>
 
-<img class="img-readme" src="assets/image/readme/site-readme.png" alt="Foto do site">
+## Preview 
+<div style='width: 100vw; display: flex; justify-content: center;'>
+   <div style='display:flex; align-items: center; '>
+   <img style='width: 400px; height:300px;' src="assets/image/readme/preview-easymoney-desktop.png" alt="Foto do site">
+   <img src='assets/image/readme/preview-easymoney-smartphone.png' alt='previa do site easymoney no smatphone'>
+   </div>
+</div>
 
 <p><a href="https://vicctorneve.github.io/site-Easymoney/">clique aqui</a> para acessar o site</p>
 
